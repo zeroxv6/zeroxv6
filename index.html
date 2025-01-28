@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0xV6's Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Custom Theme Styles -->
+  <style>
+    #theme-toggle {
+      background-color: var(--background-white);
+      color: var(--text-primary);
+      border: 2px solid var(--primary-color);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    #theme-toggle:hover {
+      transform: rotate(180deg);
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    #particle-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      border-radius: 50%;
+      animation: particleMove 20s linear infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center relative overflow-x-hidden bg-background-light">
+<!-- Theme Toggle Button -->
+<button
+        id="theme-toggle"
+        class="fixed top-4 right-4 z-50 p-3 rounded-full"
+        aria-label="Toggle theme"
+>
+  <i class="fas fa-adjust text-2xl"></i>
+</button>
+
+
+
+<!-- Main Content -->
+<div class="container mx-auto py-8 px-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+    <!-- Left Profile Section -->
+    <div class="col-span-1 glassmorphism-container vibrant-hover p-8 rounded-3xl shadow-vibrant transform transition-all duration-500 hover:scale-105">
+      <div class="text-center group">
+        <!-- Avatar with Hover Effect -->
+        <div class="relative inline-block mb-6 group">
+          <img
+                  src="assets/images/avatar.jpg"
+                  alt="Professional Avatar"
+                  class="w-64 h-64 rounded-full object-cover border-4 border-primary shadow-lg transition-all duration-500 group-hover:scale-110 group-hover:rotate-6"
+                  loading="lazy"
+          >
+          <!--          <span class="absolute bottom-4 right-4 w-8 h-8 bg-green-500 rounded-full border-2 border-white animate-pulse"></span>-->
+        </div>
+
+        <!-- Name and Title -->
+        <h1 class="text-4xl font-bold text-primary mb-2 hover:text-secondary transition-colors">
+          Raman Mann
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 tracking-wider">
+          BCA - DATA SCIENCE
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-4 mt-6">
+          <a href="https://github.com/0xV6" class="social-icon text-2xl hover:text-primary transform transition-all hover:-translate-y-2">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/raman-mann-47a982274" class="social-icon text-2xl hover:text-primary transform transition-all hover:-translate-y-2">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/raman_205" class="social-icon text-2xl hover:text-primary transform transition-all hover:-translate-y-2 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="hover:scale-110 transition-transform">
+              <path d="M18.901 1.153h3.68l-8.04 9.557L24 22.846h-7.406l-5.8-7.584-6.638 7.584H1.474l8.6-9.763L0 1.153h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.259H4.298Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold text-primary mb-4">Core Skills</h2>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="skill-chip">JavaFX</span>
+          <span class="skill-chip">Android</span>
+          <span class="skill-chip">Python</span>
+          <span class="skill-chip">Networking</span>
+          <span class="skill-chip">Linux</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Right Posts Section -->
+    <div class="col-span-2 glassmorphism-container vibrant-hover p-8 rounded-3xl shadow-vibrant">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-3xl font-bold text-primary">Articles</h2>
+      </div>
+      <!-- Add a fixed height container with scrollbar -->
+      <div class="h-[600px] overflow-y-auto pr-4" style="scrollbar-width: thin;">
+        <div id="posts-container" class="space-y-6">
+          <!-- Static Articles -->
+          <div class="post-card p-6 rounded-lg shadow-soft hover:shadow-vibrant cursor-pointer"
+               onclick="window.location.href='article.html?id=1'">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Getting Started with Python
+              </h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+              Python is a versatile programming language that's great for beginners. In this article, we'll explore the basics of Python programming.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-500 dark:text-gray-400">Posted on January 28, 2025</span>
+              <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs">
+                        Programming
+                    </span>
+            </div>
+          </div>
+
+
+
+          <div class="post-card p-6 rounded-lg shadow-soft hover:shadow-vibrant cursor-pointer"
+               onclick="window.location.href='article.html?id=2'">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Understanding Linux Basics
+              </h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+              Linux is a powerful operating system that's essential for developers. Learn the fundamental concepts and commands.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-500 dark:text-gray-400">Posted on January 28, 2025</span>
+              <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs">
+                        Linux
+                    </span>
+            </div>
+          </div>
+
+
+
+          <!-- Add more articles to test scrolling -->
+          <div class="post-card p-6 rounded-lg shadow-soft hover:shadow-vibrant cursor-pointer"
+               onclick="window.location.href='article.html?id=3'">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Web Development Fundamentals
+              </h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+              Learn the basics of web development, including HTML, CSS, and JavaScript. Essential knowledge for modern developers.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-500 dark:text-gray-400">Posted on January 28, 2025</span>
+              <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs">
+                        Web Development
+                    </span>
+            </div>
+          </div>
+
+
+
+          <div class="post-card p-6 rounded-lg shadow-soft hover:shadow-vibrant cursor-pointer"
+               onclick="window.location.href='article.html?id=4'">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                Getting Started with Git
+              </h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+              Master the basics of Git version control. Learn how to manage your code and collaborate with others effectively.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-500 dark:text-gray-400">Posted on January 28, 2025</span>
+              <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-xs">
+                        Version Control
+                    </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Projects Section -->
+    <div class="col-span-3 mt-8 glassmorphism-container vibrant-hover p-8 rounded-3xl shadow-vibrant">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-3xl font-bold text-primary">My Projects</h2>
+      </div>
+      <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Projects will be loaded here dynamically -->
+        <div class="loading-placeholder text-center py-8">
+          <i class="fas fa-spinner fa-spin text-4xl text-primary"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Particle Animation Script -->
+<script src="js/main.js"></script>
+</body>
+</html>
