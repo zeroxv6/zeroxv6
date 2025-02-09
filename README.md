@@ -1,9 +1,7 @@
 <div align="center">
   
 # 👋 Hello World, I'm Raman Mann (aka zeroxv6)! 
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&center=true&vCenter=true&width=435&lines=Android+Developer+%F0%9F%93%B1;Python+Developer+%F0%9F%90%8D;Network+Enthusiast+%F0%9F%8C%90&background=45%2C6AFF00%2CFF0000%2C00E0FF&color=FFFFFF)](https://git.io/typing-svg)
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&center=true&vCenter=true&width=435&lines=Android+Developer+%F0%9F%93%B1;Python+Developer+%F0%9F%90%8D;Network+Enthusiast+%F0%9F%8C%90&gradient=true&color=00B4D8,03045E)](https://git.io/typing-svg)
 <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/banner.gif" width="100%">
 
 </div>
