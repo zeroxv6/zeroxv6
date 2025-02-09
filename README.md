@@ -74,13 +74,14 @@ Feel free to explore my repositories, and don't hesitate to reach out if you'd l
 
 <div align="center">
   <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
-    <img src="https://custom-icon-badges.demolab.com/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40"/>
+    <img src="https://custom-icon-badges.demolab.com/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40"/>
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://x.com/raman_205">
-    <img src="https://custom-icon-badges.demolab.com/badge/-X-000000?style=for-the-badge&logo=x&logoColor=white" height="40" />
+    <img src="https://custom-icon-badges.demolab.com/badge/X.COM-000000?style=for-the-badge&logo=x&logoColor=white" height="40" />
   </a>
 </div>
+
 
 
 
