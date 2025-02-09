@@ -2,7 +2,7 @@
 
   # 👋 Hello World, I'm Raman Mann (aka zeroxv6)! 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&repeat=true&width=600&lines=%F0%9F%93%B1+Android+Development;Kotlin+%2B+Jetpack+Compose;%F0%9F%90%8D+Python+FastAPI%2B;Networking;%F0%9F%97%83%EF%B8%8F+Database+Wizard+(MySQL);%E2%98%95+Java+Development" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&repeat=true&width=600&lines=Android+Development;Kotlin+%2B+Jetpack+Compose;%F0%9F%90%8D+Python+FastAPI%2B;Networking;%F0%9F%97%83%EF%B8%8F+Database+Wizard+(MySQL);%E2%98%95+Java+Development" />
   </a>
 </div>
 
