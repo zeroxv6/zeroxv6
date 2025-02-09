@@ -1,9 +1,6 @@
 <div align="center">
 
   # 👋 Hello World, I'm Raman Mann (aka zeroxv6)! 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2000&pause=1000&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Current+Date+and+Time+(UTC);2025-02-09+09%3A23%3A34;Current+User%27s+Login%3A+zeroxv6)](https://git.io/typing-svg)
-<img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/banner.gif" width="100%">
-
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&repeat=true&width=600&lines=%F0%9F%93%B1+Android+Development+Master;Kotlin+%2B+Jetpack+Compose;%F0%9F%90%8D+Python+FastAPI+%2B+Networking;%F0%9F%97%83%EF%B8%8F+Database+Wizard+(MySQL);%E2%98%95+Java+Development" />
   </a>
