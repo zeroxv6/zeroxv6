@@ -2,7 +2,7 @@
   
 # 👋 Hello World, I'm Raman Mann (aka zeroxv6)! 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7FF&center=true&vCenter=true&width=435&lines=Android+Developer;Python+Developer;Network+Enthusiast)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&center=true&vCenter=true&width=435&multiline=true&repeat=true&random=false&height=100&lines=Android+Developer+%F0%9F%93%B1;Python+Developer+%F0%9F%90%8D;Network+Enthusiast+%F0%9F%8C%90&color=FFA500,FF0080,00FF00)](https://git.io/typing-svg)
 
 <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/banner.gif" width="100%">
 
@@ -77,7 +77,7 @@
 
 <div align="center">
   <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=plastic&logoWidth=40&labelColor=0A66C2&logoHeight=40" height="40" />
+    <img src="https://custom-icon-badges.demolab.com/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40"/>
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://x.com/raman_205">
@@ -85,13 +85,4 @@
   </a>
 </div>
 
-<!-- Alternatively, you can use these more stylized versions: -->
-<div align="center">
-  <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
-    <img src="https://custom-icon-badges.demolab.com/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40"/>
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://x.com/raman_205">
-    <img src="https://custom-icon-badges.demolab.com/badge/-X.com-000000?style=for-the-badge&logo=x&logoColor=white" height="40"/>
-  </a>
-</div>
+
