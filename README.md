@@ -76,11 +76,11 @@
 ## 🤝 Connect With Me
 
 <div align="center">
-  <a href="Your_LinkedIn_URL">
+  <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
     <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/linkedin-button.png" width="180" />
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="Your_Twitter_URL">
+  <a href="https://x.com/raman_205">
     <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/x-button.png" width="180" />
   </a>
 </div>
