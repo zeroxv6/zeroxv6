@@ -10,11 +10,11 @@
 <img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/coding.gif">
 
 ## 🚀 About Me
+Hi, I'm Raman Mann.
 
-🎓 I'm a student passionate about Android Development and Programming
-🌱 Currently mastering Kotlin and Jetpack Compose
-🔍 Exploring the world of Networking
-💻 Always eager to learn new technologies
+Currently, I work with Kotlin and Jetpack Compose for Android development, focusing on building modern mobile apps. I also work with FastAPI and Flask in Python for backend development and networking.
+
+Feel free to explore my repositories, and feel free to connect if you'd like to collaborate.
 
 <br clear="both">
 
