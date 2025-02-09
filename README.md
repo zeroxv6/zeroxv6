@@ -71,16 +71,16 @@ Feel free to explore my repositories, and don't hesitate to reach out if you'd l
 
 
 ##  Connect With Me
-
 <div align="center">
-  <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
-    <img src="https://custom-icon-badges.demolab.com/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40"/>
+  <a href="https://www.linkedin.com/in/raman-mann-47a982274/" style="text-decoration: none; color: #0A66C2; font-size: 16px;">
+    LinkedIn
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://x.com/raman_205">
-    <img src="https://custom-icon-badges.demolab.com/badge/X.COM-000000?style=for-the-badge&logo=x&logoColor=white" height="40" />
+  <a href="https://x.com/raman_205" style="text-decoration: none; color: #000000; font-size: 16px;">
+    X.com
   </a>
 </div>
+
 
 
 
