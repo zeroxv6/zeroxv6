@@ -1,6 +1,6 @@
 <div align="center">
   
-# 👋 Hello World, I'm Raman Mann aka zeroxv6! 
+# 👋 Hello World, I'm Raman Mann (aka zeroxv6)! 
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7FF&center=true&vCenter=true&width=435&lines=Android+Developer;Python+Developer;Network+Enthusiast)](https://git.io/typing-svg)
 
@@ -23,7 +23,6 @@
 
 ## 🛠️ Tech Stack & Tools
 
-<img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/tech-stack.png" width="100%" alt="Tech Stack Divider"/>
 
 <table>
   <tr>
@@ -54,7 +53,6 @@
 
 ## 🎯 Skills & Framework
 
-<img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/skills.png" width="100%" alt="Skills Divider"/>
 
 <p align="center">
   <a href="#">
@@ -62,7 +60,6 @@
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/contributions.png" width="100%" alt="Contributions Divider"/>
 
 ## 📊 GitHub Stats
 
@@ -75,7 +72,6 @@
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/connect.png" width="100%" alt="Connect Divider"/>
 
 ## 🤝 Connect With Me
 
