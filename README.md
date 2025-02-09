@@ -27,7 +27,7 @@
 <table>
   <tr>
     <td align="center" width="96">
-      <img src="https://techstack-generator.vercel.app/kotlin-icon.svg" alt="Kotlin" width="65" height="65" />
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="65" height="65" />
       <br>Kotlin
     </td>
     <td align="center" width="96">
@@ -77,16 +77,21 @@
 
 <div align="center">
   <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
-    <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/linkedin-button.png" width="180" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=plastic&logoWidth=40&labelColor=0A66C2&logoHeight=40" height="40" />
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://x.com/raman_205">
-    <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/x-button.png" width="180" />
+    <img src="https://img.shields.io/badge/X.com-000000?style=for-the-badge&logo=x&logoColor=white&style=plastic&logoWidth=40&labelColor=000000&logoHeight=40" height="40" />
   </a>
 </div>
 
+<!-- Alternatively, you can use these more stylized versions: -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/footer.gif" width="100%" alt="Footer">
-  <br>
-  <img src="https://komarev.com/ghpvc/?username=zeroxv6&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views">
+  <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
+    <img src="https://custom-icon-badges.demolab.com/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://x.com/raman_205">
+    <img src="https://custom-icon-badges.demolab.com/badge/-X.com-000000?style=for-the-badge&logo=x&logoColor=white" height="40"/>
+  </a>
 </div>
