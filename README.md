@@ -74,12 +74,10 @@ Feel free to explore my repositories, and don't hesitate to reach out if you'd l
 <div align="center">
   <a href="https://www.linkedin.com/in/raman-mann-47a982274/" style="text-decoration: none;">
     <img src="https://custom-icon-badges.demolab.com/badge/LINKEDIN-0A66C2?style=for-the-badge&logoColor=white" height="40" />
-    <span style="font-size: 16px; color: white; font-weight: bold; padding-left: 10px;">LinkedIn</span>
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://x.com/raman_205" style="text-decoration: none;">
     <img src="https://custom-icon-badges.demolab.com/badge/X.COM-000000?style=for-the-badge&logoColor=white" height="40" />
-    <span style="font-size: 16px; color: white; font-weight: bold; padding-left: 10px;">X.com</span>
   </a>
 </div>
 
