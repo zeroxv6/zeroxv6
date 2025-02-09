@@ -78,8 +78,9 @@ Feel free to explore my repositories, and don't hesitate to reach out if you'd l
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://x.com/raman_205">
-    <img src="https://img.shields.io/badge/X.com-000000?style=for-the-badge&logo=x&logoColor=white&style=plastic&logoWidth=40&labelColor=000000&logoHeight=40" height="40" />
+    <img src="https://custom-icon-badges.demolab.com/badge/-X-000000?style=for-the-badge&logo=x&logoColor=white" height="40" />
   </a>
 </div>
+
 
 
