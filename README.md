@@ -5,19 +5,7 @@
 <img src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/banner.gif" width="100%">
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&repeat=true&width=600&height=100&lines=%F0%9F%95%92+System+Status+Report+%F0%9F%96%A5%EF%B8%8F" />
-  </a>
-</div>
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=2000&color=00FF41&center=true&vCenter=true&repeat=true&width=600&height=100&lines=UTC%3A+2025-02-09+09%3A29%3A29" />
-  </a>
-</div>
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=3000&color=00FF41&center=true&vCenter=true&repeat=true&width=600&height=100&lines=SYSTEM+USER%3A+zeroxv6+%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&repeat=true&width=600&lines=%F0%9F%93%B1+Android+Development+Master;Kotlin+%2B+Jetpack+Compose;%F0%9F%90%8D+Python+FastAPI+%2B+Networking;%F0%9F%97%83%EF%B8%8F+Database+Wizard+(MySQL);%E2%98%95+Java+Development" />
   </a>
 </div>
 
