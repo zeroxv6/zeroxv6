@@ -9,7 +9,7 @@
 
 <img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/coding.gif">
 
-## 🚀 About Me
+##  About Me
 Hi, I'm Raman Mann.
 
 I build Android apps with Kotlin and Jetpack Compose, focusing on building modern mobile apps. I also work with FastAPI and Flask in Python for backend development and networking.
@@ -20,7 +20,7 @@ Feel free to explore my repositories, and feel free to connect if you'd like to 
 
 <div align="center">
 
-## 🛠️ Tech Stack & Tools
+##  Tech Stack & Tools
 
 
 <table>
@@ -50,7 +50,7 @@ Feel free to explore my repositories, and feel free to connect if you'd like to 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 🎯 Skills & Framework
+##  Skills & Framework
 
 
 <p align="center">
@@ -60,7 +60,7 @@ Feel free to explore my repositories, and feel free to connect if you'd like to 
 </p>
 
 
-## 📊 GitHub Stats
+##  GitHub Stats
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=zeroxv6&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
 
@@ -72,7 +72,7 @@ Feel free to explore my repositories, and feel free to connect if you'd like to 
 </p>
 
 
-## 🤝 Connect With Me
+##  Connect With Me
 
 <div align="center">
   <a href="https://www.linkedin.com/in/raman-mann-47a982274/">
