@@ -10,9 +10,9 @@
 ##  About Me
 Hi, I'm Raman Mann.
 
-I build Android apps with Kotlin and Jetpack Compose, focusing on building modern mobile apps. I also work with FastAPI and Flask in Python for backend development and networking.
+I develop Android apps using Kotlin and Jetpack Compose, with a focus on creating modern, user-friendly mobile applications. I also work with FastAPI and Flask in Python for backend development and networking.
 
-Feel free to explore my repositories, and feel free to connect if you'd like to collaborate.
+Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate.
 
 <br clear="both">
 
