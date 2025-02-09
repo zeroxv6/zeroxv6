@@ -390,7 +390,7 @@ class PortfolioManager {
     // Projects Section Methods
     async loadProjects() {
         try {
-            const username = '0xV6'; // Your GitHub username
+            const username = 'zeroxv6'; // Your GitHub username
             const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&direction=desc&per_page=6`);
 
             if (!response.ok) {
