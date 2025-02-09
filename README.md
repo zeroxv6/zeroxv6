@@ -7,8 +7,6 @@
 </div>
 
 
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/zeroxv6/zeroxv6/main/assets/coding.gif">
-
 ##  About Me
 Hi, I'm Raman Mann.
 
