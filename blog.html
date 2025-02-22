@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - [Your Name]</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            margin: 0;
+            background: #f5e8c7;
+            color: #2c2c2c;
+            font-family: 'IBM Plex Mono', monospace;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Courier Prime', monospace;
+        }
+
+        :root {
+            --android-teal: #26A69A;
+            --hacker-rust: #D84315;
+            --old-paper: #f5e8c7;
+            --vintage-ink: #2c2c2c;
+            --blueprint-gray: #5e5e5e;
+            --tech-gradient: linear-gradient(135deg, var(--android-teal), #607D8B, var(--hacker-rust));
+        }
+
+        .bg-oldPaper {
+            background: var(--old-paper);
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" opacity="0.2"%3E%3Cg fill="none" stroke="%235E5E5E" stroke-width="1"%3E%3Crect x="50" y="50" width="700" height="700"/%3E%3Ccircle cx="400" cy="400" r="200"/%3E%3Cpath d="M200 200 l400 400 M600 200 l-400 400"/%3E%3C/g%3E%3Cg fill="%23D84315" opacity="0.25"%3E%3Ccircle cx="150" cy="150" r="20"/%3E%3Ccircle cx="650" cy="650" r="20"/%3E%3C/g%3E%3C/svg%3E') repeat,
+            linear-gradient(45deg, rgba(245, 232, 199, 0.95), rgba(229, 204, 151, 0.9));
+            z-index: -1;
+        }
+
+        .blog-container {
+            max-width: 1100px;
+            margin: 4rem auto 6rem; /* Reduced top margin since tape is removed */
+            padding: 0 3rem;
+            position: relative;
+        }
+
+        .blog-header {
+            background: radial-gradient(circle at center, rgba(245, 232, 199, 0.95) 70%, rgba(229, 204, 151, 0.9));
+            border: 2px solid var(--blueprint-gray);
+            border-radius: 20px 20px 0 0;
+            padding: 3rem;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-header::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: -15px;
+            width: calc(100% + 30px);
+            height: 25px;
+            background: repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 12px,
+                    var(--hacker-rust) 12px,
+                    var(--hacker-rust) 15px
+            );
+            opacity: 0.7;
+        }
+
+        .blog-header::after {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            left: -15px;
+            width: calc(100% + 30px);
+            height: 25px;
+            background: repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 12px,
+                    var(--android-teal) 12px,
+                    var(--android-teal) 15px
+            );
+            opacity: 0.7;
+        }
+
+        .blog-title {
+            font-size: 3rem;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 1.2rem;
+            color: var(--blueprint-gray);
+            background: rgba(245, 232, 199, 0.8);
+            padding: 0.5rem 2rem;
+            border-radius: 25px;
+            border: 1px solid var(--blueprint-gray);
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-date {
+            color: var(--android-teal);
+            font-weight: 700;
+            background: rgba(38, 166, 154, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+        }
+
+        .blog-author {
+            color: var(--hacker-rust);
+            font-style: italic;
+        }
+
+        .blog-content {
+            background: rgba(245, 232, 199, 0.9);
+            border: 2px solid var(--blueprint-gray);
+            border-top: none;
+            border-radius: 0 0 20px 20px;
+            padding: 3rem;
+            line-height: 1.9;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+            font-size: 1.1rem;
+            position: relative;
+            overflow-y: auto;
+            max-height: 70vh;
+            scrollbar-width: thin;
+            scrollbar-color: var(--hacker-rust) var(--old-paper);
+        }
+
+        .blog-content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .blog-content::-webkit-scrollbar-track {
+            background: var(--old-paper);
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-content::-webkit-scrollbar-thumb {
+            background: var(--hacker-rust);
+            border-radius: 5px;
+            border: 2px solid var(--old-paper);
+        }
+
+        .blog-content::-webkit-scrollbar-thumb:hover {
+            background: var(--android-teal);
+        }
+
+        .blog-actions {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .blog-back, .blog-share {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: var(--android-teal);
+            color: var(--old-paper);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.3rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-share {
+            background: var(--hacker-rust);
+        }
+
+        .blog-back:hover, .blog-share:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .blog-decor {
+            position: absolute;
+            z-index: 0;
+            transition: transform 0.5s ease;
+        }
+
+        .blog-decor.gear {
+            width: 60px;
+            height: 60px;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M50 10 l10 20 l20 0 l-15 15 l5 20 l-20 -10 l-20 10 l5 -20 l-15 -15 l20 0 z" fill="%23D84315"/%3E%3C/svg%3E') no-repeat;
+            animation: rotateGear 12s infinite linear;
+            opacity: 0.6;
+        }
+
+        .blog-decor.gear.top-left {
+            top: -30px;
+            left: -30px;
+        }
+
+        .blog-decor.gear.bottom-right {
+            bottom: -30px;
+            right: -30px;
+        }
+
+        .blog-decor.ink-splat {
+            opacity: 0.25;
+        }
+
+        .blog-decor.ink-splat.left {
+            top: 20%;
+            left: -60px;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, var(--vintage-ink) 20%, transparent 70%);
+        }
+
+        .blog-decor.ink-splat.right {
+            bottom: 20%;
+            right: -60px;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, var(--hacker-rust) 20%, transparent 70%);
+        }
+
+        @keyframes rotateGear {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-oldPaper">
+<!-- Blog Content -->
+<div class="blog-container" id="blog-container">
+    <div class="blog-header" id="blog-header">
+        <h1 class="blog-title" id="blog-title">Blog Title</h1>
+        <div class="blog-meta" id="blog-meta">
+            <span class="blog-date" id="blog-date">Date</span>
+            <span class="blog-author">by [Your Name]</span>
+        </div>
+    </div>
+    <div class="blog-content" id="blog-content">
+        <p>Blog content goes here.</p>
+    </div>
+    <div class="blog-actions" id="blog-actions">
+        <a href="index.html" class="blog-back">Back to Portfolio</a>
+        <a href="#" class="blog-share" onclick="alert('Share functionality coming soon!')">Share Log</a>
+    </div>
+    <!-- Decorative Elements -->
+    <div class="blog-decor gear top-left" id="gear-top-left"></div>
+    <div class="blog-decor gear bottom-right" id="gear-bottom-right"></div>
+    <div class="blog-decor ink-splat left" id="ink-splat-left"></div>
+    <div class="blog-decor ink-splat right" id="ink-splat-right"></div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+    // Blog Data
+    const blogPosts = [
+        {
+            id: 1,
+            title: "Securing Android with Kotlin",
+            date: "2025-02-21",
+            content: "Techniques for building secure Android apps using Kotlin and best practices. Explored encryption methods and secure API integration to protect user data effectively."
+        },
+        {
+            id: 2,
+            title: "Hacking Ethically",
+            date: "2025-02-22",
+            content: "A walkthrough of my latest penetration test using Metasploit. Detailed steps on identifying vulnerabilities and securing systems ethically with practical examples."
+        },
+        {
+            id: 3,
+            title: "Optimizing Android Performance",
+            date: "2025-02-23",
+            content: "Tips and tricks for optimizing Android app performance using the Android SDK. Focused on memory management and efficient threading for smoother user experiences."
+        },
+        {
+            id: 4,
+            title: "Wireshark Deep Dive",
+            date: "2025-02-24",
+            content: "Analyzing network traffic with Wireshark to uncover hidden threats. Included a case study on detecting unauthorized access attempts in a local network."
+        },
+        {
+            id: 5,
+            title: "Jetpack Compose Basics",
+            date: "2025-02-25",
+            content: "Getting started with Jetpack Compose for modern Android UI development. A beginner-friendly guide with sample code for creating responsive layouts."
+        }
+    ];
+
+    // Get Blog ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const blogId = parseInt(urlParams.get('id'));
+    const post = blogPosts.find(p => p.id === blogId);
+
+    // Populate Blog Content
+    if (post) {
+        document.getElementById('blog-title').textContent = post.title;
+        document.getElementById('blog-date').textContent = post.date;
+        document.getElementById('blog-content').textContent = post.content;
+        document.title = `${post.title} - [Your Name]`;
+    } else {
+        document.getElementById('blog-title').textContent = "Log Entry Not Found";
+        document.getElementById('blog-content').textContent = "The requested system log could not be retrieved from the archive.";
+        document.title = "Log Not Found - [Your Name]";
+    }
+
+    // GSAP Animations
+    gsap.from('#blog-container', {
+        opacity: 0,
+        scale: 0.95,
+        duration: 1.5,
+        ease: 'power2.out',
+        delay: 0.2
+    });
+
+    gsap.from('#blog-header', {
+        opacity: 0,
+        y: 120,
+        rotation: 3,
+        duration: 1.5,
+        ease: 'back.out(1.5)',
+        delay: 0.4
+    });
+
+    gsap.from('#blog-title', {
+        opacity: 0,
+        x: -80,
+        duration: 1.2,
+        ease: 'power3.out',
+        delay: 0.6
+    });
+
+    gsap.from('#blog-meta', {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: 'power2.out',
+        delay: 0.8
+    });
+
+    gsap.from('#blog-content', {
+        opacity: 0,
+        y: 100,
+        duration: 1.5,
+        ease: 'power2.out',
+        delay: 1
+    });
+
+    gsap.from('.blog-actions', {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: 'power2.out',
+        delay: 1.2
+    });
+
+    gsap.from('.blog-back', {
+        opacity: 0,
+        scale: 0.5,
+        duration: 1,
+        ease: 'elastic.out(1, 0.5)',
+        delay: 1.4
+    });
+
+    gsap.from('.blog-share', {
+        opacity: 0,
+        scale: 0.5,
+        duration: 1,
+        ease: 'elastic.out(1, 0.5)',
+        delay: 1.6
+    });
+
+    gsap.from('#gear-top-left', {
+        opacity: 0,
+        scale: 0,
+        rotation: -90,
+        duration: 1.5,
+        ease: 'elastic.out(1, 0.8)',
+        delay: 1.8
+    });
+
+    gsap.from('#gear-bottom-right', {
+        opacity: 0,
+        scale: 0,
+        rotation: 90,
+        duration: 1.5,
+        ease: 'elastic.out(1, 0.8)',
+        delay: 2
+    });
+
+    gsap.from('#ink-splat-left', {
+        opacity: 0,
+        scale: 0,
+        rotation: -45,
+        duration: 1.5,
+        ease: 'elastic.out(1, 0.8)',
+        delay: 2.2
+    });
+
+    gsap.from('#ink-splat-right', {
+        opacity: 0,
+        scale: 0,
+        rotation: 45,
+        duration: 1.5,
+        ease: 'elastic.out(1, 0.8)',
+        delay: 2.4
+    });
+
+    // Background Parallax Effect
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        document.body.style.backgroundPositionY = `${scrollY * 0.1}px`;
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Forge - [Your Name]</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            margin: 0;
+            background: #f5e8c7;
+            color: #2c2c2c;
+            font-family: 'IBM Plex Mono', monospace;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Courier Prime', monospace;
+        }
+
+        :root {
+            --android-teal: #26A69A;
+            --hacker-rust: #D84315;
+            --old-paper: #f5e8c7;
+            --vintage-ink: #2c2c2c;
+            --blueprint-gray: #5e5e5e;
+            --tech-gradient: linear-gradient(135deg, var(--android-teal), #607D8B, var(--hacker-rust));
+            --panel-bg: rgba(245, 232, 199, 0.9);
+        }
+
+        .container {
+            position: relative;
+            padding: 0;
+            width: 100vw;
+            height: auto;
+            min-height: 200vh;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8rem;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" opacity="0.1"%3E%3Cg fill="none" stroke="%235E5E5E" stroke-width="1"%3E%3Crect x="50" y="50" width="700" height="700"/%3E%3Ccircle cx="400" cy="400" r="200"/%3E%3Cpath d="M200 200 l400 400 M600 200 l-400 400"/%3E%3C/g%3E%3Cg fill="%23D84315" opacity="0.2"%3E%3Ccircle cx="150" cy="150" r="20"/%3E%3Ccircle cx="650" cy="650" r="20"/%3E%3C/g%3E%3C/svg%3E') repeat,
+            linear-gradient(45deg, rgba(245, 232, 199, 0.95), rgba(229, 204, 151, 0.9));
+            z-index: -1;
+        }
+
+        .section {
+            background: var(--panel-bg);
+            border: 2px solid var(--blueprint-gray);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 2;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-title i {
+            color: var(--hacker-rust);
+        }
+
+        .header {
+            width: 80%;
+            max-width: 1200px;
+            height: 350px;
+            margin-top: 5vh;
+            background: linear-gradient(135deg, var(--android-teal) 0%, var(--hacker-rust) 100%);
+            text-align: center;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .project-title {
+            font-size: 3.5rem;
+            color: var(--old-paper);
+            margin: 0;
+            text-shadow: 0 0 10px rgba(38, 166, 154, 0.5);
+        }
+
+        .project-link-btn {
+            padding: 0.8rem 2rem;
+            background: var(--android-teal);
+            color: var(--old-paper);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 0 20px var(--android-teal);
+            transition: transform 0.3s ease;
+        }
+
+        .project-link-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .project-meta {
+            font-size: 1rem;
+            color: var(--vintage-ink);
+            background: rgba(245, 232, 199, 0.8);
+            padding: 0.5rem 1.5rem;
+            border: 1px dashed var(--blueprint-gray);
+            border-radius: 20px;
+            margin-top: 1.5rem;
+            display: inline-block;
+        }
+
+        .main-content {
+            width: 90%;
+            max-width: 1400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 4rem;
+            margin-top: 20vh;
+        }
+
+        .left-column {
+            width: 45%;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .right-column {
+            width: 45%;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .overview-section {
+            width: 100%;
+            height: 450px;
+        }
+
+        .overview-text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .images-section {
+            width: 100%;
+            height: 600px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--android-teal) var(--panel-bg);
+        }
+
+        .images-section::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .images-section::-webkit-scrollbar-track {
+            background: var(--panel-bg);
+        }
+
+        .images-section::-webkit-scrollbar-thumb {
+            background: var(--android-teal);
+            border-radius: 3px;
+        }
+
+        .images-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border: 2px solid var(--android-teal);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(38, 166, 154, 0.3);
+        }
+
+        .features-section {
+            width: 100%;
+            height: 400px;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            padding: 0.8rem;
+            background: rgba(38, 166, 154, 0.1);
+            margin-bottom: 0.8rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px dashed var(--android-teal);
+        }
+
+        .features-list li i {
+            color: var(--hacker-rust);
+        }
+
+        .usage-section {
+            width: 100%;
+            height: 350px;
+        }
+
+        .usage-steps {
+            counter-reset: step;
+            list-style: none;
+            padding: 0;
+        }
+
+        .usage-steps li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .usage-steps li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            width: 1.8rem;
+            height: 1.8rem;
+            background: var(--hacker-rust);
+            color: var(--old-paper);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            box-shadow: 0 0 10px var(--hacker-rust);
+        }
+
+        .usage-steps li i {
+            color: var(--android-teal);
+        }
+
+        .tech-section {
+            width: 100%;
+            height: 320px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tech-item {
+            padding: 0.5rem 1.2rem;
+            background: var(--android-teal);
+            color: var(--old-paper);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            box-shadow: 0 0 10px var(--android-teal);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tech-item i {
+            color: var(--hacker-rust);
+        }
+
+        .milestones-section {
+            width: 100%;
+            height: 380px;
+        }
+
+        .milestones-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .milestones-list li {
+            padding: 0.8rem;
+            background: rgba(216, 67, 21, 0.1);
+            margin-bottom: 0.8rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px dashed var(--hacker-rust);
+        }
+
+        .milestones-list li i {
+            color: var(--android-teal);
+        }
+
+        .impact-section {
+            width: 100%;
+            height: 300px;
+        }
+
+        .impact-text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-actions {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 10vh;
+        }
+
+        .project-back {
+            padding: 1rem 2.5rem;
+            background: var(--hacker-rust);
+            color: var(--old-paper);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 0 20px var(--hacker-rust);
+            transition: transform 0.3s ease;
+        }
+
+        .project-back:hover {
+            transform: scale(1.05);
+        }
+
+        .tech-widget {
+            position: absolute;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .widget-terminal {
+            width: 250px;
+            height: 180px;
+            background: rgba(38, 166, 154, 0.2);
+            border: 2px solid var(--android-teal);
+            border-radius: 5px;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--vintage-ink);
+            line-height: 1.2;
+            top: 10vh;
+            left: 2vw;
+        }
+
+        .widget-circuit {
+            width: 200px;
+            height: 200px;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.3"%3E%3Cpath d="M10 10 h80 v80 h-80 z M20 20 h60 v60 h-60 z M30 30 h40 v40 h-40" fill="none" stroke="%23D84315" stroke-width="1"/%3E%3C/svg%3E') no-repeat;
+            top: 50vh;
+            right: 2vw;
+        }
+
+        .widget-gear {
+            width: 120px;
+            height: 120px;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M50 10 l10 20 l20 0 l-15 15 l5 20 l-20 -10 l-20 10 l5 -20 l-15 -15 l20 0 z" fill="%23D84315"/%3E%3C/svg%3E') no-repeat;
+            animation: spinGear 10s infinite linear;
+            top: 130vh;
+            left: 85vw;
+        }
+
+        .widget-blueprint {
+            width: 220px;
+            height: 220px;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M10 10 h80 v80 h-80 z" fill="none" stroke="%235E5E5E" stroke-width="2"/%3E%3C/svg%3E') no-repeat;
+            opacity: 0.5;
+            top: 90vh;
+            left: 5vw;
+        }
+
+        .widget-code {
+            width: 300px;
+            height: 150px;
+            background: rgba(216, 67, 21, 0.2);
+            border: 2px dashed var(--hacker-rust);
+            border-radius: 5px;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--vintage-ink);
+            line-height: 1.2;
+            top: 160vh;
+            right: 5vw;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes spinGear {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="background"></div>
+<!-- Project Content -->
+<div class="container" id="project-container">
+    <div class="section header" id="project-header">
+        <div class="header-content">
+            <h1 class="project-title" id="project-title">Project Title</h1>
+            <a href="#" id="project-link-btn" class="project-link-btn">Deploy Project</a>
+        </div>
+        <div class="project-meta" id="project-meta">
+            <span id="project-tags">Tags</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-column">
+            <div class="section overview-section" id="project-content">
+                <h2 class="section-title"><i class="fas fa-file-code"></i> Blueprint</h2>
+                <p class="overview-text" id="project-description">Project description goes here.</p>
+            </div>
+
+            <div class="section features-section" id="features-section">
+                <h2 class="section-title"><i class="fas fa-cogs"></i> Components</h2>
+                <ul class="features-list" id="project-features">
+                    <!-- Features added via JS -->
+                </ul>
+            </div>
+
+            <div class="section milestones-section" id="milestones-section">
+                <h2 class="section-title"><i class="fas fa-trophy"></i> Milestones</h2>
+                <ul class="milestones-list" id="project-milestones">
+                    <!-- Milestones added via JS -->
+                </ul>
+            </div>
+
+            <div class="section stats-section" id="stats-section">
+                <h2 class="section-title"><i class="fas fa-chart-bar"></i> Metrics</h2>
+                <ul class="stats-list" id="project-stats">
+                    <!-- Stats added via JS -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="section images-section" id="images-section">
+                <h2 class="section-title"><i class="fas fa-image"></i> Schematics</h2>
+                <div class="images-grid" id="project-images">
+                    <!-- Images added via JS -->
+                </div>
+            </div>
+
+            <div class="section usage-section" id="usage-section">
+                <h2 class="section-title"><i class="fas fa-play"></i> Operations</h2>
+                <ul class="usage-steps" id="project-usage">
+                    <!-- Usage steps added via JS -->
+                </ul>
+            </div>
+
+            <div class="section tech-section" id="tech-stack-section">
+                <h2 class="section-title"><i class="fas fa-tools"></i> Toolkit</h2>
+                <div class="tech-stack" id="project-tech-stack">
+                    <!-- Tech stack added via JS -->
+                </div>
+            </div>
+
+            <div class="section impact-section" id="impact-section">
+                <h2 class="section-title"><i class="fas fa-chart-line"></i> Impact</h2>
+                <p class="impact-text" id="project-impact">
+                    The potential reach and influence of this project...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-actions" id="project-actions">
+        <a href="index.html" class="project-back">Back to Forge</a>
+    </div>
+
+    <!-- Technical Widgets -->
+    <div class="tech-widget widget-terminal">
+        <span>TERMINAL LOG</span><br>
+        <span style="animation: blink 1s infinite;">_</span>
+    </div>
+    <div class="tech-widget widget-circuit"></div>
+    <div class="tech-widget widget-gear"></div>
+    <div class="tech-widget widget-blueprint"></div>
+    <div class="tech-widget widget-code">
+        <span>CODE SNIPPET</span><br>
+        <span>func deploy() { ... }</span>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+    // Project Data
+    const projects = [
+        {
+            id: 1,
+            title: "SecureChat App",
+            tags: "Mobile · Security",
+            description: "A vintage-inspired secure messaging platform with robust encryption, blending old-school design with modern tech.",
+            link: "https://github.com/yourusername/securechat",
+            images: ["https://via.placeholder.com/400x250?text=SecureChat+1", "https://via.placeholder.com/400x250?text=SecureChat+2"],
+            features: ["AES-256 Encryption", "OAuth 2.0 Auth", "Real-Time Messaging"],
+            usage: ["Install via APK", "Login with OAuth", "Start Secure Chats"],
+            techStack: ["Kotlin", "Android SDK", "Firebase"],
+            impact: "Secures communication with a nostalgic twist for thousands.",
+            milestones: ["v1.0 Launch", "OAuth Integration", "10k Users"],
+            stats: ["Lines of Code: 1,500", "Contributors: 3", "Issues Resolved: 12"]
+        },
+        {
+            id: 2,
+            title: "Network Scanner",
+            tags: "Ethical Hacking · Python",
+            description: "A retro-styled network vulnerability scanner with a punchy CLI, built for developers who love old tech vibes.",
+            link: "https://github.com/yourusername/networkscanner",
+            images: ["https://via.placeholder.com/400x250?text=Network+Scanner+1", "https://via.placeholder.com/400x250?text=Network+Scanner+2"],
+            features: ["Port Scanning", "Vuln Detection", "Live Reporting"],
+            usage: ["Setup Python Env", "Run with IP", "Analyze Output"],
+            techStack: ["Python", "Nmap", "Scapy"],
+            impact: "Enhances network safety with a classic touch.",
+            milestones: ["CLI Release", "Nmap Integration", "GUI Beta"],
+            stats: ["Lines of Code: 800", "Contributors: 2", "Issues Resolved: 8"]
+        },
+        {
+            id: 3,
+            title: "Fitness Tracker",
+            tags: "Android · UI/UX",
+            description: "A fitness app with a vintage blueprint UI, tracking health metrics with a nod to old engineering.",
+            link: "https://github.com/yourusername/fitnesstracker",
+            images: ["https://via.placeholder.com/400x250?text=Fitness+Tracker+1", "https://via.placeholder.com/400x250?text=Fitness+Tracker+2"],
+            features: ["Step Counter", "Calorie Tracker", "Custom Widgets"],
+            usage: ["Deploy to Device", "Grant Permissions", "Track Fitness"],
+            techStack: ["Jetpack Compose", "Android SDK", "Room"],
+            impact: "Transforms fitness tracking with a retro flair.",
+            milestones: ["Beta Launch", "Widget Support", "1k Users"],
+            stats: ["Lines of Code: 1,200", "Contributors: 1", "Issues Resolved: 15"]
+        },
+        {
+            id: 4,
+            title: "Web Vulnerability Analyzer",
+            tags: "Cybersecurity · Web",
+            description: "A web security tool with a vintage hacker aesthetic, automating scans and fixes for developer efficiency.",
+            link: "https://github.com/yourusername/webvulnanalyzer",
+            images: ["https://via.placeholder.com/400x250?text=Web+Vuln+1", "https://via.placeholder.com/400x250?text=Web+Vuln+2"],
+            features: ["XSS Detection", "SQLi Scanner", "Patch Generator"],
+            usage: ["Run with URL", "Analyze Results", "Apply Fixes"],
+            techStack: ["Node.js", "Puppeteer", "Express"],
+            impact: "Secures web projects with a nostalgic edge.",
+            milestones: ["Prototype", "Patch Engine", "Public Beta"],
+            stats: ["Lines of Code: 2,000", "Contributors: 4", "Issues Resolved: 20"]
+        }
+    ];
+
+    // Get Project ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectId = parseInt(urlParams.get('id'));
+    const project = projects.find(p => p.id === projectId);
+
+    // Populate Project Content
+    if (project) {
+        document.getElementById('project-title').textContent = project.title;
+        document.getElementById('project-tags').textContent = project.tags;
+        document.getElementById('project-description').textContent = project.description;
+        document.getElementById('project-link-btn').href = project.link;
+        document.getElementById('project-impact').textContent = project.impact;
+        document.title = `${project.title} - [Your Name]`;
+
+        // Populate Images
+        const imagesGrid = document.getElementById('project-images');
+        project.images.forEach(src => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = `${project.title} Screenshot`;
+            img.className = 'project-image';
+            imagesGrid.appendChild(img);
+        });
+
+        // Populate Features
+        const featuresList = document.getElementById('project-features');
+        project.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.innerHTML = `<i class="fas fa-cogs"></i> ${feature}`;
+            featuresList.appendChild(li);
+        });
+
+        // Populate Usage
+        const usageList = document.getElementById('project-usage');
+        project.usage.forEach(step => {
+            const li = document.createElement('li');
+            li.innerHTML = `<i class="fas fa-play"></i> ${step}`;
+            usageList.appendChild(li);
+        });
+
+        // Populate Tech Stack
+        const techStack = document.getElementById('project-tech-stack');
+        project.techStack.forEach(tech => {
+            const span = document.createElement('span');
+            span.className = 'tech-item';
+            span.innerHTML = `<i class="fas fa-tools"></i> ${tech}`;
+            techStack.appendChild(span);
+        });
+
+        // Populate Milestones
+        const milestonesList = document.getElementById('project-milestones');
+        project.milestones.forEach(milestone => {
+            const li = document.createElement('li');
+            li.innerHTML = `<i class="fas fa-trophy"></i> ${milestone}`;
+            milestonesList.appendChild(li);
+        });
+
+        // Populate Stats
+        const statsList = document.getElementById('project-stats');
+        project.stats.forEach(stat => {
+            const li = document.createElement('li');
+            li.innerHTML = `<i class="fas fa-chart-bar"></i> ${stat}`;
+            statsList.appendChild(li);
+        });
+    } else {
+        document.getElementById('project-title').textContent = "Project Not Found";
+        document.getElementById('project-description').textContent = "Error: Project blueprint not located.";
+        document.getElementById('project-actions').style.display = 'none';
+        document.getElementById('project-link-btn').style.display = 'none';
+        document.getElementById('images-section').style.display = 'none';
+        document.getElementById('features-section').style.display = 'none';
+        document.getElementById('usage-section').style.display = 'none';
+        document.getElementById('tech-stack-section').style.display = 'none';
+        document.getElementById('milestones-section').style.display = 'none';
+        document.getElementById('impact-section').style.display = 'none';
+        document.getElementById('stats-section').style.display = 'none';
+        document.title = "Error - [Your Name]";
+    }
+
+    // GSAP Scroll-Triggered Animations
+    gsap.from('.section', {
+        opacity: 0,
+        y: 50,
+        stagger: 0.3,
+        duration: 1.5,
+        ease: 'power4.out',
+        scrollTrigger: {
+            trigger: '.section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('#project-title', {
+        opacity: 0,
+        x: -150,
+        duration: 1,
+        ease: 'back.out(1.7)',
+        scrollTrigger: {
+            trigger: '#project-header',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('#project-link-btn', {
+        opacity: 0,
+        scale: 0,
+        duration: 1,
+        ease: 'elastic.out(1, 0.3)',
+        scrollTrigger: {
+            trigger: '#project-header',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        },
+        onComplete: () => gsap.to('#project-link-btn', { scale: 1.05, yoyo: true, repeat: -1, duration: 1, ease: 'power1.inOut' })
+    });
+
+    gsap.from('#project-meta', {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: '#project-header',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('.project-image', {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'back.out(1.7)',
+        scrollTrigger: {
+            trigger: '#images-section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('.features-list li', {
+        opacity: 0,
+        x: -50,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: '#features-section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('.usage-steps li', {
+        opacity: 0,
+        scale: 0,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'elastic.out(1, 0.5)',
+        scrollTrigger: {
+            trigger: '#usage-section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('.tech-item', {
+        opacity: 0,
+        y: 30,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'power4.out',
+        scrollTrigger: {
+            trigger: '#tech-stack-section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('.milestones-list li', {
+        opacity: 0,
+        x: -50,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: '#milestones-section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('#project-impact', {
+        opacity: 0,
+        x: -50,
+        duration: 1.5,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: '#impact-section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('.stats-list li', {
+        opacity: 0,
+        x: 50,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: '#stats-section',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        }
+    });
+
+    gsap.from('.project-back', {
+        opacity: 0,
+        scale: 0,
+        duration: 1,
+        ease: 'elastic.out(1, 0.3)',
+        scrollTrigger: {
+            trigger: '#project-actions',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        },
+        onComplete: () => gsap.to('.project-back', { scale: 1.05, yoyo: true, repeat: -1, duration: 1.5, ease: 'power1.inOut' })
+    });
+
+    gsap.from('.tech-widget', {
+        opacity: 0,
+        scale: 0,
+        stagger: 0.3,
+        duration: 1.5,
+        ease: 'power4.out',
+        scrollTrigger: {
+            trigger: '.tech-widget',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        },
+        onComplete: () => {
+            gsap.to('.widget-terminal', { animation: 'float 3s infinite ease-in-out' });
+            gsap.to('.widget-circuit', { animation: 'pulse 2s infinite ease-in-out' });
+            gsap.to('.widget-gear', { animation: 'spinGear 10s infinite linear' });
+            gsap.to('.widget-blueprint', { animation: 'float 4s infinite ease-in-out' });
+            gsap.to('.widget-code', { animation: 'pulse 3s infinite ease-in-out' });
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "title": "Journey into Cosmic Coding",
+      "date": "2025-02-21",
+      "content": "Exploring the vastness of 3D web development with Three.js and GSAP."
+    },
+    {
+      "title": "Building Holographic Worlds",
+      "date": "2025-02-22",
+      "content": "A deep dive into creating immersive portfolio experiences."
+    }
+  ]
+}

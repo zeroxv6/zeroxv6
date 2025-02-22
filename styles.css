@@ -1,0 +1,1197 @@
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+
+/*body {*/
+/*    margin: 0;*/
+/*    background: #f5e8c7;*/
+/*    color: #2c2c2c;*/
+/*    font-family: 'IBM Plex Mono', monospace;*/
+/*    overflow-x: hidden;*/
+/*}*/
+
+/*h1, h2, h3 {*/
+/*    font-family: 'Courier Prime', monospace;*/
+/*}*/
+
+/*!* Custom Colors *!*/
+/*:root {*/
+/*    --android-teal: #26A69A;*/
+/*    --hacker-rust: #D84315;*/
+/*    --old-paper: #f5e8c7;*/
+/*    --vintage-ink: #2c2c2c;*/
+/*    --blueprint-gray: #5e5e5e;*/
+/*    --tech-gradient: linear-gradient(135deg, var(--android-teal), #607D8B, var(--hacker-rust));*/
+/*}*/
+
+/*!* Background *!*/
+/*.bg-oldPaper {*/
+/*    background: var(--old-paper);*/
+/*    position: relative;*/
+/*}*/
+
+/*body::before {*/
+/*    content: '';*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" opacity="0.1"%3E%3Cg fill="none" stroke="%235E5E5E" stroke-width="1"%3E%3Crect x="50" y="50" width="700" height="700"/%3E%3Ccircle cx="400" cy="400" r="200"/%3E%3Cpath d="M200 200 l400 400 M600 200 l-400 400"/%3E%3C/g%3E%3Cg fill="%23D84315" opacity="0.2"%3E%3Ccircle cx="150" cy="150" r="20"/%3E%3Ccircle cx="650" cy="650" r="20"/%3E%3C/g%3E%3C/svg%3E') repeat,*/
+/*    linear-gradient(45deg, rgba(245, 232, 199, 0.95), rgba(229, 204, 151, 0.9));*/
+/*    z-index: -1;*/
+/*}*/
+
+/*!* Tech Text *!*/
+/*.tech-text {*/
+/*    background: var(--tech-gradient);*/
+/*    -webkit-background-clip: text;*/
+/*    background-clip: text;*/
+/*    color: transparent;*/
+/*    position: relative;*/
+/*}*/
+
+/*.tech-text::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: -2px;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 3px;*/
+/*    background: var(--tech-gradient);*/
+/*    transform: scaleX(0);*/
+/*    transform-origin: right;*/
+/*    transition: transform 0.5s ease;*/
+/*}*/
+
+/*.tech-text:hover::before {*/
+/*    transform: scaleX(1);*/
+/*    transform-origin: left;*/
+/*}*/
+
+/*!* Header *!*/
+/*.bg-techFrame {*/
+/*    background: rgba(245, 232, 199, 0.9);*/
+/*    border-bottom: 2px solid var(--android-teal);*/
+/*}*/
+
+/*.shadow-tech {*/
+/*    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/*.logo {*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.logo:hover {*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+/*.nav-link {*/
+/*    font-size: 1.1rem;*/
+/*    color: var(--vintage-ink);*/
+/*    position: relative;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.nav-link::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: -4px;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 2px;*/
+/*    background: var(--hacker-rust);*/
+/*    transform: scaleX(0);*/
+/*    transform-origin: center;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.nav-link:hover {*/
+/*    color: var(--android-teal);*/
+/*}*/
+
+/*.nav-link:hover::after {*/
+/*    transform: scaleX(1);*/
+/*}*/
+
+/*!* Animations *!*/
+/*@keyframes pulseTech {*/
+/*    0%, 100% { opacity: 0.5; }*/
+/*    50% { opacity: 1; }*/
+/*}*/
+
+/*.animate-pulseTech {*/
+/*    animation: pulseTech 2s infinite;*/
+/*}*/
+
+/*@keyframes rotateMarquee {*/
+/*    0% { transform: rotate(0deg); }*/
+/*    100% { transform: rotate(360deg); }*/
+/*}*/
+
+/*!* Hero Section *!*/
+/*.hero-grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    gap: 4rem;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.hero-image-container {*/
+/*    position: relative;*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.hero-image {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    border: 4px solid var(--android-teal);*/
+/*    box-shadow: 0 0 40px rgba(38, 166, 154, 0.4);*/
+/*    transition: transform 0.5s ease;*/
+/*    z-index: 2;*/
+/*    position: relative;*/
+/*}*/
+
+/*.hero-image:hover {*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+/*.hero-overlay {*/
+/*    position: absolute;*/
+/*    inset: 0;*/
+/*    background: linear-gradient(180deg, rgba(38, 166, 154, 0.2), rgba(216, 67, 21, 0.2));*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.5s ease;*/
+/*}*/
+
+/*.hero-image-container:hover .hero-overlay {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.marquee {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: 350px;*/
+/*    height: 350px;*/
+/*    transform: translate(-50%, -50%);*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.marquee-text {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    font-size: 0.9rem;*/
+/*    color: var(--vintage-ink);*/
+/*    text-align: center;*/
+/*    animation: rotateMarquee 20s linear infinite;*/
+/*    transform-origin: center center;*/
+/*}*/
+
+/*.hero-info {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*!* Tech Button *!*/
+/*.tech-button {*/
+/*    padding: 0.8rem 2rem;*/
+/*    font-size: 1rem;*/
+/*    font-weight: 700;*/
+/*    border-radius: 25px;*/
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*}*/
+
+/*.tech-button.android {*/
+/*    background: var(--android-teal);*/
+/*    color: var(--old-paper);*/
+/*    box-shadow: 0 0 20px rgba(38, 166, 154, 0.5);*/
+/*}*/
+
+/*.tech-button.hacker {*/
+/*    background: var(--hacker-rust);*/
+/*    color: var(--old-paper);*/
+/*    box-shadow: 0 0 20px rgba(216, 67, 21, 0.5);*/
+/*}*/
+
+/*.tech-button:hover {*/
+/*    transform: translateY(-5px);*/
+/*    box-shadow: 0 0 30px rgba(94, 94, 94, 0.5);*/
+/*}*/
+
+/*.tech-badge {*/
+/*    padding: 0.4rem 0.8rem;*/
+/*    font-size: 0.9rem;*/
+/*    background: rgba(38, 166, 154, 0.2);*/
+/*    border: 1px solid var(--android-teal);*/
+/*    border-radius: 20px;*/
+/*    color: var(--vintage-ink);*/
+/*}*/
+
+/*!* About Section *!*/
+/*.about-wrapper {*/
+/*    max-width: 900px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.about-panel {*/
+/*    position: relative;*/
+/*    padding: 4rem;*/
+/*    background: rgba(245, 232, 199, 0.8);*/
+/*    border-radius: 15px;*/
+/*    border: 2px solid var(--blueprint-gray);*/
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+/*.about-content {*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.tech-divider {*/
+/*    width: 50%;*/
+/*    height: 2px;*/
+/*    background: var(--tech-gradient);*/
+/*    margin: 1rem auto;*/
+/*}*/
+
+/*.about-decor {*/
+/*    position: absolute;*/
+/*}*/
+
+/*.about-decor.blueprint {*/
+/*    top: -30px;*/
+/*    left: -30px;*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M10 10 h80 v80 h-80 z" fill="none" stroke="%235E5E5E" stroke-width="2"/%3E%3C/svg%3E') no-repeat;*/
+/*    opacity: 0.5;*/
+/*}*/
+
+/*.about-decor.gear {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M50 10 l10 20 l20 0 l-15 15 l5 20 l-20 -10 l-20 10 l5 -20 l-15 -15 l20 0 z" fill="%23D84315"/%3E%3C/svg%3E') no-repeat;*/
+/*    animation: rotateGear 10s infinite linear;*/
+/*}*/
+
+/*.about-decor.gear.top-right {*/
+/*    top: -25px;*/
+/*    right: -25px;*/
+/*}*/
+
+/*.about-decor.gear.bottom-left {*/
+/*    bottom: -25px;*/
+/*    left: -25px;*/
+/*}*/
+
+/*@keyframes rotateGear {*/
+/*    0% { transform: rotate(0deg); }*/
+/*    100% { transform: rotate(360deg); }*/
+/*}*/
+
+/*!* Skills Section *!*/
+/*.skills-matrix {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
+/*    gap: 2.5rem;*/
+/*}*/
+
+/*.skill-card {*/
+/*    padding: 2rem;*/
+/*    border-radius: 12px;*/
+/*    background: rgba(245, 232, 199, 0.7);*/
+/*    border: 2px solid var(--blueprint-gray);*/
+/*    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);*/
+/*    transition: transform 0.4s ease;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.skill-card.android {*/
+/*    border-color: var(--android-teal);*/
+/*}*/
+
+/*.skill-card.hacker {*/
+/*    border-color: var(--hacker-rust);*/
+/*}*/
+
+/*.skill-card:hover {*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+/*.skill-bar {*/
+/*    width: 100%;*/
+/*    height: 8px;*/
+/*    background: rgba(94, 94, 94, 0.3);*/
+/*    border-radius: 4px;*/
+/*    margin-top: 1rem;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.skill-bar::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    height: 100%;*/
+/*    width: var(--progress);*/
+/*    background: var(--tech-gradient);*/
+/*    transition: width 0.5s ease;*/
+/*}*/
+
+/*.sub-skills {*/
+/*    position: absolute;*/
+/*    bottom: -100%;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    background: rgba(245, 232, 199, 0.9);*/
+/*    padding: 1rem;*/
+/*    font-size: 0.9rem;*/
+/*    color: var(--vintage-ink);*/
+/*    text-align: center;*/
+/*    transition: bottom 0.3s ease;*/
+/*    z-index: 2;*/
+/*}*/
+
+/*.sub-skills span {*/
+/*    display: block;*/
+/*    margin: 0.5rem 0;*/
+/*}*/
+
+/*.skill-card:hover .sub-skills {*/
+/*    bottom: 0;*/
+/*}*/
+
+/*!* Projects Section *!*/
+/*.projects-circuit {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+/*    gap: 2.5rem;*/
+/*}*/
+
+/*.project-node {*/
+/*    position: relative;*/
+/*    padding: 2.5rem;*/
+/*    border-radius: 15px;*/
+/*    background: rgba(245, 232, 199, 0.8);*/
+/*    border: 2px solid var(--blueprint-gray);*/
+/*    min-height: 220px;*/
+/*    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);*/
+/*    transition: transform 0.5s ease;*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*    display: block;*/
+/*}*/
+
+/*.project-node.android {*/
+/*    border-color: var(--android-teal);*/
+/*}*/
+
+/*.project-node.hacker {*/
+/*    border-color: var(--hacker-rust);*/
+/*}*/
+
+/*.project-node:hover {*/
+/*    transform: translateY(-10px);*/
+/*}*/
+
+/*.node-frame {*/
+/*    position: absolute;*/
+/*    top: -15px;*/
+/*    right: -15px;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    border: 2px solid var(--android-teal);*/
+/*    border-radius: 50%;*/
+/*    box-shadow: 0 0 15px rgba(38, 166, 154, 0.5);*/
+/*    animation: pulseFrame 3s infinite;*/
+/*}*/
+
+/*.project-node.hacker .node-frame {*/
+/*    border-color: var(--hacker-rust);*/
+/*    box-shadow: 0 0 15px rgba(216, 67, 21, 0.5);*/
+/*}*/
+
+/*@keyframes pulseFrame {*/
+/*    0%, 100% { transform: scale(1); opacity: 0.6; }*/
+/*    50% { transform: scale(1.15); opacity: 1; }*/
+/*}*/
+
+/*.project-meta {*/
+/*    display: flex;*/
+/*    gap: 0.5rem;*/
+/*}*/
+
+/*.project-tag {*/
+/*    padding: 0.3rem 1rem;*/
+/*    font-size: 0.9rem;*/
+/*    background: rgba(38, 166, 154, 0.2);*/
+/*    border: 1px solid var(--android-teal);*/
+/*    border-radius: 15px;*/
+/*    color: var(--vintage-ink);*/
+/*}*/
+
+/*.project-node.hacker .project-tag {*/
+/*    background: rgba(216, 67, 21, 0.2);*/
+/*    border-color: var(--hacker-rust);*/
+/*}*/
+
+/*!* Blogs Section *!*/
+/*.blogs-terminal {*/
+/*    position: relative;*/
+/*    padding: 3rem;*/
+/*    background: rgba(245, 232, 199, 0.9);*/
+/*    border: 2px solid var(--blueprint-gray);*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+/*.terminal-header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 1rem 2rem;*/
+/*    background: rgba(94, 94, 94, 0.1);*/
+/*    border-bottom: 2px dashed var(--hacker-rust);*/
+/*    border-radius: 10px 10px 0 0;*/
+/*}*/
+
+/*.terminal-tab {*/
+/*    font-size: 1.4rem;*/
+/*    color: var(--android-teal);*/
+/*    background: rgba(245, 232, 199, 0.8);*/
+/*    padding: 0.5rem 1.5rem;*/
+/*    border: 2px solid var(--android-teal);*/
+/*    border-bottom: none;*/
+/*    border-radius: 8px 8px 0 0;*/
+/*    position: relative;*/
+/*    top: 2px;*/
+/*}*/
+
+/*.terminal-decor {*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M20 20 h60 v60 h-60 z" fill="none" stroke="%235E5E5E" stroke-width="2"/%3E%3C/svg%3E') no-repeat;*/
+/*    opacity: 0.4;*/
+/*}*/
+
+/*.terminal-body {*/
+/*    padding: 2rem;*/
+/*    background: rgba(229, 204, 151, 0.2);*/
+/*    border-radius: 0 0 10px 10px;*/
+/*}*/
+
+/*.blog-entry {*/
+/*    background: rgba(245, 232, 199, 0.7);*/
+/*    border: 1px dashed var(--blueprint-gray);*/
+/*    border-radius: 8px;*/
+/*    padding: 1.2rem;*/
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*}*/
+
+/*.blog-entry:hover {*/
+/*    transform: translateX(10px);*/
+/*    box-shadow: 0 5px 20px rgba(216, 67, 21, 0.3);*/
+/*}*/
+
+/*.blog-title {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 0.8rem;*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+
+/*.blog-title::before {*/
+/*    content: '[*]';*/
+/*    color: var(--hacker-rust);*/
+/*    font-weight: 700;*/
+/*}*/
+
+/*.terminal-footer {*/
+/*    margin-top: 2rem;*/
+/*    text-align: center;*/
+/*    padding: 1rem;*/
+/*    background: rgba(94, 94, 94, 0.1);*/
+/*    border-top: 1px solid var(--android-teal);*/
+/*    border-radius: 0 0 8px 8px;*/
+/*}*/
+
+/*.footer-text {*/
+/*    font-size: 1.1rem;*/
+/*    color: var(--blueprint-gray);*/
+/*}*/
+
+/*!* Footer *!*/
+/*.footer-link {*/
+/*    font-size: 1.1rem;*/
+/*    color: var(--blueprint-gray);*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.footer-link:hover {*/
+/*    color: var(--hacker-rust);*/
+/*}*/
+
+/*!* Ensure the hero-grid uses CSS Grid *!*/
+/*.hero-grid {*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(12, 1fr); !* 12-column grid *!*/
+/*  gap: 1.5rem; !* Adjust gap as needed *!*/
+/*  align-items: start;*/
+/*}*/
+
+/*!* Left side (image and buttons) - Reduce width and shift left *!*/
+/*.hero-image-container {*/
+/*  grid-column: span 2; !* Takes up 2 columns *!*/
+/*  margin-left: -2rem; !* Keeps it shifted left *!*/
+/*}*/
+
+/*!* Right side (blogs section) - Increase width and shift right *!*/
+/*.hero-info {*/
+/*  grid-column: span 10; !* Takes up 10 columns *!*/
+/*  margin-left: 8rem; !* Shifts the blogs section slightly to the right *!*/
+/*}*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    background: #f5e8c7;
+    color: #2c2c2c;
+    font-family: 'IBM Plex Mono', monospace;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Courier Prime', monospace;
+}
+
+/* Custom Colors */
+:root {
+    --android-teal: #26A69A;
+    --hacker-rust: #D84315;
+    --old-paper: #f5e8c7;
+    --vintage-ink: #2c2c2c;
+    --blueprint-gray: #5e5e5e;
+    --tech-gradient: linear-gradient(135deg, var(--android-teal), #607D8B, var(--hacker-rust));
+}
+
+/* Background */
+.bg-oldPaper {
+    background: var(--old-paper);
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" opacity="0.1"%3E%3Cg fill="none" stroke="%235E5E5E" stroke-width="1"%3E%3Crect x="50" y="50" width="700" height="700"/%3E%3Ccircle cx="400" cy="400" r="200"/%3E%3Cpath d="M200 200 l400 400 M600 200 l-400 400"/%3E%3C/g%3E%3Cg fill="%23D84315" opacity="0.2"%3E%3Ccircle cx="150" cy="150" r="20"/%3E%3Ccircle cx="650" cy="650" r="20"/%3E%3C/g%3E%3C/svg%3E') repeat,
+    linear-gradient(45deg, rgba(245, 232, 199, 0.95), rgba(229, 204, 151, 0.9));
+    z-index: -1;
+}
+
+/* Tech Text */
+.tech-text {
+    background: var(--tech-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.tech-text::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--tech-gradient);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.tech-text:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Header */
+.bg-techFrame {
+    background: rgba(245, 232, 199, 0.9);
+    border-bottom: 2px solid var(--android-teal);
+}
+
+.shadow-tech {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: var(--vintage-ink);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--hacker-rust);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--android-teal);
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Animations */
+@keyframes pulseTech {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.animate-pulseTech {
+    animation: pulseTech 2s infinite;
+}
+
+@keyframes rotateMarquee {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hero Section */
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Updated to 12-column grid */
+    gap: 1.5rem; /* Adjust gap as needed */
+    align-items: start;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    grid-column: span 2; /* Takes up 2 columns */
+
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid var(--android-teal);
+    box-shadow: 0 0 40px rgba(38, 166, 154, 0.4);
+    transition: transform 0.5s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(38, 166, 154, 0.2), rgba(216, 67, 21, 0.2));
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hero-image-container:hover .hero-overlay {
+    opacity: 1;
+}
+
+.marquee {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.marquee-text {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+    color: var(--vintage-ink);
+    text-align: center;
+    animation: rotateMarquee 20s linear infinite;
+    transform-origin: center center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: span 10; /* Takes up 10 columns */
+    margin-left: 14rem; /* Shifts the blogs section to the right */
+}
+
+/* Tech Button */
+.tech-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-button.android {
+    background: var(--android-teal);
+    color: var(--old-paper);
+    box-shadow: 0 0 20px rgba(38, 166, 154, 0.5);
+}
+
+.tech-button.hacker {
+    background: var(--hacker-rust);
+    color: var(--old-paper);
+    box-shadow: 0 0 20px rgba(216, 67, 21, 0.5);
+}
+
+.tech-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(94, 94, 94, 0.5);
+}
+
+.tech-badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    background: rgba(38, 166, 154, 0.2);
+    border: 1px solid var(--android-teal);
+    border-radius: 20px;
+    color: var(--vintage-ink);
+}
+
+/* About Section */
+.about-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-panel {
+    position: relative;
+    padding: 4rem;
+    background: rgba(245, 232, 199, 0.8);
+    border-radius: 15px;
+    border: 2px solid var(--blueprint-gray);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.tech-divider {
+    width: 50%;
+    height: 2px;
+    background: var(--tech-gradient);
+    margin: 1rem auto;
+}
+
+.about-decor {
+    position: absolute;
+}
+
+.about-decor.blueprint {
+    top: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M10 10 h80 v80 h-80 z" fill="none" stroke="%235E5E5E" stroke-width="2"/%3E%3C/svg%3E') no-repeat;
+    opacity: 0.5;
+}
+
+.about-decor.gear {
+    width: 50px;
+    height: 50px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M50 10 l10 20 l20 0 l-15 15 l5 20 l-20 -10 l-20 10 l5 -20 l-15 -15 l20 0 z" fill="%23D84315"/%3E%3C/svg%3E') no-repeat;
+    animation: rotateGear 10s infinite linear;
+}
+
+.about-decor.gear.top-right {
+    top: -25px;
+    right: -25px;
+}
+
+.about-decor.gear.bottom-left {
+    bottom: -25px;
+    left: -25px;
+}
+
+@keyframes rotateGear {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Skills Section */
+.skills-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+}
+
+.skill-card {
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(245, 232, 199, 0.7);
+    border: 2px solid var(--blueprint-gray);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card.android {
+    border-color: var(--android-teal);
+}
+
+.skill-card.hacker {
+    border-color: var(--hacker-rust);
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(94, 94, 94, 0.3);
+    border-radius: 4px;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: var(--progress);
+    background: var(--tech-gradient);
+    transition: width 0.5s ease;
+}
+
+.sub-skills {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(245, 232, 199, 0.9);
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--vintage-ink);
+    text-align: center;
+    transition: bottom 0.3s ease;
+    z-index: 2;
+}
+
+.sub-skills span {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.skill-card:hover .sub-skills {
+    bottom: 0;
+}
+
+/* Projects Section */
+.projects-circuit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-node {
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 15px;
+    background: rgba(245, 232, 199, 0.8);
+    border: 2px solid var(--blueprint-gray);
+    min-height: 220px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-node.android {
+    border-color: var(--android-teal);
+}
+
+.project-node.hacker {
+    border-color: var(--hacker-rust);
+}
+
+.project-node:hover {
+    transform: translateY(-10px);
+}
+
+.node-frame {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--android-teal);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(38, 166, 154, 0.5);
+    animation: pulseFrame 3s infinite;
+}
+
+.project-node.hacker .node-frame {
+    border-color: var(--hacker-rust);
+    box-shadow: 0 0 15px rgba(216, 67, 21, 0.5);
+}
+
+@keyframes pulseFrame {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.15); opacity: 1; }
+}
+
+.project-meta {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-tag {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    background: rgba(38, 166, 154, 0.2);
+    border: 1px solid var(--android-teal);
+    border-radius: 15px;
+    color: var(--vintage-ink);
+}
+
+.project-node.hacker .project-tag {
+    background: rgba(216, 67, 21, 0.2);
+    border-color: var(--hacker-rust);
+}
+
+/* Blogs Section */
+.blogs-terminal {
+    position: relative;
+    padding: 2rem;
+    background: rgba(245, 232, 199, 0.9);
+    border: 2px solid var(--blueprint-gray);
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(94, 94, 94, 0.1);
+    border-bottom: 2px dashed var(--hacker-rust);
+    border-radius: 10px 10px 0 0;
+}
+
+.terminal-tab {
+    font-size: 1.4rem;
+    color: var(--android-teal);
+    background: rgba(245, 232, 199, 0.8);
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--android-teal);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    top: 2px;
+}
+
+.terminal-decor {
+    width: 60px;
+    height: 60px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M20 20 h60 v60 h-60 z" fill="none" stroke="%235E5E5E" stroke-width="2"/%3E%3C/svg%3E') no-repeat;
+    opacity: 0.4;
+}
+
+.terminal-body {
+    padding: 1rem;
+    background: rgba(229, 204, 151, 0.2);
+    border-radius: 0 0 10px 10px;
+}
+
+.blog-entry {
+    background: rgba(245, 232, 199, 0.7);
+    border: 1px dashed var(--blueprint-gray);
+    border-radius: 8px;
+    padding: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 3rem;
+    width: 100%;
+}
+
+.blog-entry:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 20px rgba(216, 67, 21, 0.3);
+}
+
+.blog-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-title::before {
+    content: '[*]';
+    color: var(--hacker-rust);
+    font-weight: 700;
+}
+
+.terminal-footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(94, 94, 94, 0.1);
+    border-top: 1px solid var(--android-teal);
+    border-radius: 0 0 8px 8px;
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    color: var(--blueprint-gray);
+}
+
+/* Footer */
+.footer-link {
+    font-size: 1.1rem;
+    color: var(--blueprint-gray);
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--hacker-rust);
+}
+
+/* Social Icons Animation Styles */
+.social-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--android-teal);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-icon:hover::before {
+    transform: scale(1);
+}
+
+.social-icon svg {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover svg {
+    transform: scale(1.15);
+    color: white !important;
+}
+
+/* Add a subtle bounce effect when clicking */
+.social-icon:active {
+    transform: translateY(-1px);
+}
+
+/* Custom color for hover states */
+.social-icon.linkedin:hover::before {
+    background: #0077b5;
+}
+
+.social-icon.x-twitter:hover::before {
+    background: #000000;
+}
+
+.social-icon.github:hover::before {
+    background: #333333;
+}
+
+/* Optional: Add a subtle shadow on hover */
+.social-icon:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+/* Custom Scrollbar Styles */
+.terminal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+    background: rgba(38, 166, 154, 0.1);
+    border-radius: 4px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    background: #26A69A;
+    border-radius: 4px;
+    border: 2px solid rgba(38, 166, 154, 0.1);
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+    background: #1e8b7d;
+}
