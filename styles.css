@@ -215,9 +215,26 @@ body::before {
     border-radius: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: auto;
-    height: 100%;    /* Add this line */
+    min-height: 45px; /* Add this */
     text-decoration: none;
     cursor: pointer;
+    position: relative; /* Add this */
+    z-index: 1; /* Add this */
+    line-height: 1; /* Add this */
+}
+.tech-button > * {
+    pointer-events: none;
+}
+
+.tech-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 25px;
 }
 
 .tech-button.android {
