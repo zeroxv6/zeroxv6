@@ -30,137 +30,121 @@
   </header>
 
   <!-- Hero Section -->
-  <!-- Hero Section -->
   <section id="hero" class="min-h-screen flex items-center justify-center pt-24 px-12">
     <div class="hero-grid max-w-5xl w-full grid grid-cols-12 gap-6">
-      <div class="hero-image-container col-span-2 relative">
-        <img src="assets/images/my-image.jpg" alt="Your Image" class="hero-image rounded-full">
-        <div class="hero-overlay rounded-full"></div>
-
-        <!-- User Identity Section -->
-        <div class="text-center mt-4 space-y-2">
-          <h2 class="text-2xl font-courier-prime text-androidTeal">RAMAN MANN</h2>
-          <p class="text-sm font-courier-prime text-blueprintGray uppercase tracking-wider mb-2">BCA - DATA SCIENCE</p>
-          <br>
-          <!-- Social Media Icons -->
-          <!-- Social Media Icons -->
-          <div class="flex justify-center items-center gap-4 mt-3">
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/raman-mann-47a982274" target="_blank" class="social-icon linkedin hover:transform hover:scale-110 transition-transform duration-300">
-              <svg class="w-5 h-5 fill-current text-androidTeal hover:text-hackerRust transition-colors duration-300" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
-              </svg>
-            </a>
-
-            <!-- X.com (Twitter) -->
-            <a href="https://x.com/raman_205" target="_blank" class="social-icon x-twitter hover:transform hover:scale-110 transition-transform duration-300">
-              <svg class="w-5 h-5 fill-current text-androidTeal hover:text-hackerRust transition-colors duration-300" viewBox="0 0 24 24">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
-
-            <!-- GitHub -->
-            <a href="https://github.com/zeroxv6" target="_blank" class="social-icon github hover:transform hover:scale-110 transition-transform duration-300">
-              <svg class="w-5 h-5 fill-current text-androidTeal hover:text-hackerRust transition-colors duration-300" viewBox="0 0 24 24">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-              </svg>
-            </a>
-          </div>
+      <!-- Left Column - Profile Section -->
+      <div class="hero-image-container col-span-2 relative z-10">
+        <!-- Profile Image with Overlay -->
+        <div class="relative w-full max-w-[200px] mx-auto">
+          <img src="assets/images/my-image.jpg"
+               alt="Raman Mann"
+               class="hero-image rounded-full w-full h-auto shadow-lg"
+               style="aspect-ratio: 1/1; object-fit: cover;">
+          <div class="hero-overlay rounded-full absolute inset-0"></div>
         </div>
 
-        <div class="mt-4 flex flex-row justify-center gap-4">
-    <a href="https://drive.google.com/file/d/1gekbPbH0EigNqVwU4sFmUKEhZZmJ9lKw/view?usp=drive_link" target="_blank" class="tech-button android inline-flex items-center gap-2" role="button">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-        </svg>
-        Download CV
-    </a>
-    <a href="contact.html" class="tech-button hacker inline-flex items-center gap-2">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-        Contact Me
-    </a>
-</div>
+        <!-- Identity Section -->
+        <div class="text-center mt-6 space-y-2 relative z-10">
+          <h2 class="text-2xl font-courier-prime text-androidTeal font-bold">RAMAN MANN</h2>
+          <p class="text-sm font-courier-prime text-blueprintGray uppercase tracking-wider mb-2">
+            BCA - DATA SCIENCE
+          </p>
+          <p class="text-sm font-courier-prime text-blueprintGray tracking-wider mb-2">
+            <span>Co-Founder</span>
+            <a href="https://github.com/ForgedInSyntax"
+               class="font-bold text-hackerRust hover:opacity-80 transition-opacity duration-300"
+               target="_blank">
+              @ForgedInSyntax
+            </a>
+          </p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-center items-center gap-4 mt-6 relative z-10">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/raman-mann-47a982274"
+             target="_blank"
+             class="social-icon linkedin hover:transform hover:scale-110 transition-all duration-300"
+             aria-label="LinkedIn Profile">
+            <svg class="w-6 h-6 fill-current text-androidTeal hover:text-hackerRust transition-colors duration-300"
+                 viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+            </svg>
+          </a>
+
+          <!-- X.com (Twitter) -->
+          <a href="https://x.com/raman_205"
+             target="_blank"
+             class="social-icon x-twitter hover:transform hover:scale-110 transition-all duration-300"
+             aria-label="Twitter/X Profile">
+            <svg class="w-6 h-6 fill-current text-androidTeal hover:text-hackerRust transition-colors duration-300"
+                 viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/zeroxv6"
+             target="_blank"
+             class="social-icon github hover:transform hover:scale-110 transition-all duration-300"
+             aria-label="GitHub Profile">
+            <svg class="w-6 h-6 fill-current text-androidTeal hover:text-hackerRust transition-colors duration-300"
+                 viewBox="0 0 24 24">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4 px-4 relative z-20">
+          <!-- Download CV Button -->
+          <a href="https://drive.google.com/file/d/1gekbPbH0EigNqVwU4sFmUKEhZZmJ9lKw/view?usp=drive_link"
+             target="_blank"
+             class="tech-button android inline-flex items-center justify-center gap-2 w-full sm:w-auto relative"
+             role="button">
+            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            <span class="whitespace-nowrap">Download CV</span>
+          </a>
+
+          <!-- Contact Me Button -->
+          <a href="contact.html"
+             class="tech-button hacker inline-flex items-center justify-center gap-2 w-full sm:w-auto relative">
+            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span class="whitespace-nowrap">Contact Me</span>
+          </a>
+        </div>
       </div>
 
+      <!-- Right Column - Blog Terminal -->
       <div class="hero-info col-span-10">
-        <div class="blogs-terminal" id = "blogs">
+        <div class="blogs-terminal" id="blogs">
           <div class="terminal-header">
             <span class="terminal-tab">LOG ARCHIVE</span>
             <span class="terminal-decor blueprint"></span>
           </div>
           <div class="terminal-body" style="
-            max-height: 400px;
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: #26A69A rgba(38, 166, 154, 0.1);
-        ">
+                    max-height: 400px;
+                    overflow-y: auto;
+                    scrollbar-width: thin;
+                    scrollbar-color: #26A69A rgba(38, 166, 154, 0.1);">
             <div id="blog-list" class="space-y-6 p-4">
               <p>NO BLOGS YET</p>
-              <!-- Existing blog entries -->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=1" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[22-02-2025]</span>-->
-<!--                  <span class="text-md font-courier-prime">Securing Android with Kotlin</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=2" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Hacking Ethically</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=3" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Optimizing Android Performance</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=4" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Wireshark Deep Dive</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=5" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Jetpack Compose Basics</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              &lt;!&ndash; Additional blog entries to demonstrate scroll &ndash;&gt;-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=6" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Advanced Android Security Patterns</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=7" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Reverse Engineering Android Apps</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=8" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Network Protocol Analysis</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=9" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Mobile App Penetration Testing</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="blog-entry">-->
-<!--                <a href="blog.html?id=10" class="blog-title flex items-center gap-2">-->
-<!--                  <span class="text-hackerRust">[*]</span>-->
-<!--                  <span class="text-md font-courier-prime">Kotlin Coroutines Deep Dive</span>-->
-<!--                </a>-->
-<!--              </div>-->
             </div>
+<!--            <div class="blog-entry">-->
+<!--              <a href="blog.html?id=10" class="blog-title flex items-center gap-2">-->
+<!--                <span class="text-md font-courier-prime">Kotlin Coroutines Deep Dive</span>-->
+<!--              </a>-->
+<!--            </div>-->
           </div>
           <div class="terminal-footer">
             <span class="footer-text">END OF TRANSMISSION</span>
@@ -290,7 +274,7 @@
   <section id="projects" class="py-32 px-12 relative">
     <h2 class="text-4xl font-courier-prime tech-text mb-12 text-center">Project Archive</h2>
     <div class="projects-circuit max-w-5xl mx-auto">
-<!--      <a href="project.html?id=1" class="project-node android">-->
+      <!--      <a href="project.html?id=1" class="project-node android">-->
       <a href="project.html?id=1" class="project-node android">
         <div class="node-content">
           <h3 class="text-xl font-courier-prime">Goals (In Progress)</h3>
@@ -304,7 +288,7 @@
         </div>
         <div class="node-frame"></div>
       </a>
-<!--      <a href="project.html?id=2" class="project-node hacker">-->
+      <!--      <a href="project.html?id=2" class="project-node hacker">-->
       <a href="https://github.com/zeroxv6/MULTIPURPOSE-APP" class="project-node hacker">
         <div class="node-content">
           <h3 class="text-xl font-courier-prime">Multi Productivity Application</h3>
@@ -317,7 +301,7 @@
         </div>
         <div class="node-frame"></div>
       </a>
-<!--      <a href="project.html?id=3" class="project-node android">-->
+      <!--      <a href="project.html?id=3" class="project-node android">-->
       <a href="https://github.com/zeroxv6/CHATpy" class="project-node python">
         <div class="node-content">
           <h3 class="text-xl font-courier-prime">Python CLI Chat Application</h3>
@@ -348,11 +332,11 @@
   <!-- Footer -->
   <footer class="py-12 px-12 bg-techFrame text-center">
     <p class="text-md text-vintageInk">© 2025 Raman Mann. All rights reserved.</p>
-<!--    <div class="mt-4 flex justify-center gap-6">-->
-<!--      <a href="#" class="footer-link">GitHub</a>-->
-<!--      <a href="#" class="footer-link">LinkedIn</a>-->
-<!--      <a href="#" class="footer-link">X (Formerly Twitter)</a>-->
-<!--    </div>-->
+    <!--    <div class="mt-4 flex justify-center gap-6">-->
+    <!--      <a href="#" class="footer-link">GitHub</a>-->
+    <!--      <a href="#" class="footer-link">LinkedIn</a>-->
+    <!--      <a href="#" class="footer-link">X (Formerly Twitter)</a>-->
+    <!--    </div>-->
   </footer>
 </div>
 
