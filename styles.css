@@ -215,6 +215,7 @@ body::before {
     border-radius: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: auto;
+    height: 100%;    /* Add this line */
     text-decoration: none;
     cursor: pointer;
 }
