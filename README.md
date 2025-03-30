@@ -1,6 +1,6 @@
 <div align="center">
 
-  # Hello World, I'm Raman Mann (aka zeroxv6)! 
+  # Raman Mann (aka zeroxv6)! 
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=4000&pause=1000&color=f4b41a&center=true&vCenter=true&repeat=true&width=600&lines=Android+Development;Kotlin+%2B+Jetpack+Compose;Python+FastAPI/Flask;Networking;Linux;Database-MySQL;Java+Development" />
   </a>
