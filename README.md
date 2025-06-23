@@ -39,10 +39,7 @@ Feel free to explore my repositories, and don't hesitate to reach out if you'd l
       <img src="https://user-images.githubusercontent.com/25181517/192108895-20dc3343-43e3-4a54-a90e-13a4abbc57b9.png" width="65" height="65" alt="Android" />
       <br>Android
     </td>
-    <td align="center" width="96">
-      <img src="https://user-images.githubusercontent.com/25181517/186150304-1568ffdf-4c62-4bdc-9cf1-8d8efcea7c5b.png" width="65" height="65" alt="Gradle" />
-      <br>Gradle
-    </td>
+    
   </tr>
 </table>
 
