@@ -1,11 +1,14 @@
-<!--
+!--
   ┌──────────────────────────────────────────────┐
   │  github.com/zeroxv6 — profile readme          │
   │  font: JetBrains Mono // palette: #22c55e     │
   └──────────────────────────────────────────────┘
 -->
+
 <!-- ██████████████████ HERO BANNER ██████████████████ -->
+
 <div align="center">
+
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
   <rect width="900" height="160" fill="#171717"/>
   <!-- subtle grid lines -->
@@ -21,12 +24,27 @@
   <!-- subtitle -->
   <text x="450" y="122" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" font-weight="400" fill="#737373" text-anchor="middle" letter-spacing="1">raman mann  //  android &amp; backend engineer</text>
 </svg>
+
 <br/>
+
 <!-- ████████████████ ANIMATED ROLES ████████████████ -->
+
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=900&color=22c55e&center=true&vCenter=true&width=600&height=30&lines=_%20android+development;_%20kotlin+%2B+jetpack+compose;_%20python+fastapi+%2F+flask;_%20linux+%26+networking;_%20database+%E2%80%94+mysql+%2F+postgres" alt="roles" />
+
 <br/>
+
 <!-- ████████████████ STATUS ████████████████ -->
+
+![](https://img.shields.io/badge/STATUS-ONLINE-22c55e?style=flat-square&labelColor=171717&color=22c55e)
+&nbsp;
+![](https://img.shields.io/badge/LOCATION-INDIA-171717?style=flat-square&labelColor=171717&color=333333)
+&nbsp;
+![](https://img.shields.io/badge/OPEN_TO-COLLABORATION-171717?style=flat-square&labelColor=171717&color=333333)
+&nbsp;
+![Profile Views](https://komarev.com/ghpvc/?username=zeroxv6&style=flat-square&color=333333&labelColor=171717&label=VIEWS)
+
 </div>
+
 <br/>
 
 <!-- ═══════════════════ ABOUT ═══════════════════ -->
@@ -132,7 +150,3 @@ $ whoami
 </a>
 
 <br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=171717&height=36&text=%C2%A9%202026%20zeroxv6%20%2F%2F%20built%20with%20curiosity.&fontColor=737373&fontSize=13&fontFamily=JetBrains%20Mono&fontAlignY=60" width="100%" />
-
-</div>
