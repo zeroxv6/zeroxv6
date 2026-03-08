@@ -1,85 +1,195 @@
+<!--
+  ┌──────────────────────────────────────────────┐
+  │  github.com/zeroxv6 — profile readme          │
+  │  font: JetBrains Mono // palette: #22c55e     │
+  └──────────────────────────────────────────────┘
+-->
+
 <div align="center">
 
-  # Raman Mann (aka zeroxv6)! 
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=4000&pause=1000&color=f4b41a&center=true&vCenter=true&repeat=true&width=600&lines=Android+Development;Kotlin+%2B+Jetpack+Compose;Python+FastAPI/Flask;Networking;Linux;Database-MySQL;Java+Development" />
-  </a>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=56&duration=1&pause=99999&color=171717&background=FAFAF900&center=true&vCenter=true&repeat=false&width=700&height=90&lines=zeroxv6" alt="zeroxv6" />
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=15&duration=1&pause=99999&color=737373&background=FAFAF900&center=true&vCenter=true&repeat=false&width=700&height=28&lines=raman+mann+%2F%2F+android+%26+backend+engineer" alt="subtitle" />
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=800&color=22c55e&center=true&vCenter=true&width=700&height=28&lines=android+development;kotlin+%2B+jetpack+compose;python+fastapi+%2F+flask;linux+%26+networking;database+%E2%80%94+mysql+%2F+postgres" alt="roles" />
+
 </div>
 
+<br/>
 
-##  About Me
-Hi, I'm Raman Mann.
+<!-- ═══════════════════ STATUS ═══════════════════ -->
 
-I develop Android apps using Kotlin and Jetpack Compose, with a focus on creating modern, user-friendly mobile applications. I also work with FastAPI and Flask in Python for backend development and networking.
+```
+╭─ STATUS ───────────────────────────────────────────────────────────────────╮
+│                                                                            │
+│   ●  ONLINE          raman mann                                            │
+│   ●  FOCUS           android apps · backend apis · low-level tinkering     │
+│   ●  LOCATION        india                                                 │
+│                                                                            │
+╰────────────────────────────────────────────────────────────────────────────╯
+```
 
-Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate.
+<br/>
 
-<br clear="both">
-
-<div align="center">
-
-##  Tech Stack & Tools
-
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
 
 <table>
-  <tr>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="65" height="65" />
-      <br>Kotlin
-    </td>
-    <td align="center" width="96">
-      <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-      <br>Python
-    </td>
-    <td align="center" width="96">
-      <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
-      <br>GitHub
-    </td>
-    <td align="center" width="96">
-      <img src="https://user-images.githubusercontent.com/25181517/192108895-20dc3343-43e3-4a54-a90e-13a4abbc57b9.png" width="65" height="65" alt="Android" />
-      <br>Android
-    </td>
-    
-  </tr>
+<tr>
+<td width="50%" valign="top">
+
+```kotlin
+// about.kt
+
+data class Developer(
+  val name: String    = "Raman Mann",
+  val alias: String   = "zeroxv6",
+  val focus: List<String> = listOf(
+    "Android (Kotlin + Compose)",
+    "Backend  (FastAPI / Flask)",
+    "Networking & Linux",
+    "Database — MySQL / Postgres"
+  )
+)
+
+val me = Developer()
+// feel free to reach out ↓
+```
+
+</td>
+<td width="50%" valign="top">
+
+```python
+# about.py
+
+me = {
+  "name"     : "Raman Mann",
+  "alias"    : "zeroxv6",
+  "building" : [
+    "modern android apps",
+    "fastapi / flask backends",
+  ],
+  "learning" : [
+    "system design",
+    "low-level networking",
+  ],
+  "open_to"  : "collaboration",
+}
+```
+
+</td>
+</tr>
 </table>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<br/>
 
-##  Skills & Framework
+<!-- ═══════════════════ STACK ═══════════════════ -->
 
-
-<p align="center">
-  <a href="#">
-    <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,python,linux,git,github,gradle,vim,vscode" />
-  </a>
-</p>
-
-
-##  GitHub Stats
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=zeroxv6&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
-
-<p align="center">
-  <a href="https://github.com/zeroxv6">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=zeroxv6&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zeroxv6&layout=compact&langs_count=7&theme=tokyonight"/>
-  </a>
-</p>
-
-
-##  Connect With Me
 <div align="center">
-  <a href="https://www.linkedin.com/in/raman-mann-47a982274/" style="text-decoration: none;">
-    <img src="https://custom-icon-badges.demolab.com/badge/LINKEDIN-0A66C2?style=for-the-badge&logoColor=white" height="40" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://x.com/raman_205" style="text-decoration: none;">
-    <img src="https://custom-icon-badges.demolab.com/badge/X.COM-000000?style=for-the-badge&logoColor=white" height="40" />
-  </a>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
+
+**`// stack & tools`**
+
+<br/>
+
+<a href="#"><img src="https://skillicons.dev/icons?i=kotlin,androidstudio,python,linux,git,github,gradle,vim,mysql,postgres&theme=light&perline=10" /></a>
+
+<br/>
+<br/>
+
+<!-- Mini tag cloud -->
+<img src="https://img.shields.io/badge/Kotlin-171717?style=flat-square&logo=kotlin&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/Jetpack_Compose-171717?style=flat-square&logo=jetpackcompose&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/Python-171717?style=flat-square&logo=python&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/FastAPI-171717?style=flat-square&logo=fastapi&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/Flask-171717?style=flat-square&logo=flask&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/MySQL-171717?style=flat-square&logo=mysql&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/PostgreSQL-171717?style=flat-square&logo=postgresql&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/Linux-171717?style=flat-square&logo=linux&logoColor=22c55e" />
+&nbsp;
+<img src="https://img.shields.io/badge/Gradle-171717?style=flat-square&logo=gradle&logoColor=22c55e" />
+
 </div>
 
+<br/>
 
+<!-- ═══════════════════ STATS ═══════════════════ -->
 
+<div align="center">
 
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
 
+**`// github stats`**
 
+<br/>
+
+<a href="https://github.com/zeroxv6">
+  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=zeroxv6&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=FAFAF9&text_color=171717&icon_color=22c55e&title_color=22c55e&ring_color=22c55e" />
+  &nbsp;&nbsp;
+  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zeroxv6&layout=compact&langs_count=7&hide_border=true&bg_color=FAFAF9&text_color=171717&title_color=22c55e" />
+</a>
+
+<br/><br/>
+
+<a href="https://git.io/streak-stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=zeroxv6&hide_border=true&background=FAFAF9&stroke=E5E5E5&ring=22c55e&fire=22c55e&currStreakNum=171717&sideNums=171717&currStreakLabel=737373&sideLabels=737373&dates=A3A3A3&font=JetBrains+Mono" />
+</a>
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════ ACTIVITY ═══════════════════ -->
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
+
+**`// contribution graph`**
+
+<br/>
+
+<a href="https://github.com/zeroxv6">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zeroxv6&bg_color=FAFAF9&color=737373&line=22c55e&point=171717&area=true&area_color=22c55e&hide_border=true&custom_title=contribution%20activity&font_color=171717" width="98%"/>
+</a>
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════ CONNECT ═══════════════════ -->
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
+
+**`// connect`**
+
+<br/>
+
+<a href="https://www.linkedin.com/in/raman-mann-47a982274/">
+  <img src="https://img.shields.io/badge/linkedin-171717?style=for-the-badge&logo=linkedin&logoColor=22c55e&labelColor=171717" height="38"/>
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://x.com/raman_205">
+  <img src="https://img.shields.io/badge/x.com-171717?style=for-the-badge&logo=x&logoColor=22c55e&labelColor=171717" height="38"/>
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/zeroxv6">
+  <img src="https://img.shields.io/badge/github-171717?style=for-the-badge&logo=github&logoColor=22c55e&labelColor=171717" height="38"/>
+</a>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=12&duration=1&pause=99999&color=A3A3A3&center=true&vCenter=true&repeat=false&width=700&height=20&lines=%C2%A9+2026+zeroxv6+%2F%2F+built+with+curiosity." />
+
+</div>
