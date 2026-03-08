@@ -4,40 +4,36 @@
   │  font: JetBrains Mono // palette: #22c55e     │
   └──────────────────────────────────────────────┘
 -->
-
 <!-- ██████████████████ HERO BANNER ██████████████████ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=171717&height=160&text=zeroxv6&fontColor=22c55e&fontSize=82&fontFamily=JetBrains%20Mono&fontAlignY=55&desc=raman%20mann%20%20%2F%2F%20%20android%20%26%20backend%20engineer&descColor=737373&descSize=14&descAlignY=78&animation=fadeIn" width="100%" />
-
-<br/>
-
-<!-- ████████████████ ANIMATED ROLES ████████████████ -->
-
 <div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=900&color=22c55e&center=true&vCenter=true&width=600&height=30&lines=_%20android+development;_%20kotlin+%2B+jetpack+compose;_%20python+fastapi+%2F+flask;_%20linux+%26+networking;_%20database+%E2%80%94+mysql+%2F+postgres" alt="roles" />
-
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
+  <rect width="900" height="160" fill="#171717"/>
+  <!-- subtle grid lines -->
+  <line x1="0" y1="0" x2="900" y2="0" stroke="#22c55e" stroke-width="2"/>
+  <line x1="0" y1="158" x2="900" y2="158" stroke="#333333" stroke-width="1"/>
+  <!-- corner brackets -->
+  <text x="18" y="30" font-family="monospace" font-size="13" fill="#333333">╭──</text>
+  <text x="18" y="148" font-family="monospace" font-size="13" fill="#333333">╰──</text>
+  <text x="840" y="30" font-family="monospace" font-size="13" fill="#333333">──╮</text>
+  <text x="840" y="148" font-family="monospace" font-size="13" fill="#333333">──╯</text>
+  <!-- main title -->
+  <text x="450" y="88" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="72" font-weight="800" fill="#22c55e" text-anchor="middle" letter-spacing="-2">zeroxv6</text>
+  <!-- subtitle -->
+  <text x="450" y="122" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" font-weight="400" fill="#737373" text-anchor="middle" letter-spacing="1">raman mann  //  android &amp; backend engineer</text>
+</svg>
 <br/>
-
+<!-- ████████████████ ANIMATED ROLES ████████████████ -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=900&color=22c55e&center=true&vCenter=true&width=600&height=30&lines=_%20android+development;_%20kotlin+%2B+jetpack+compose;_%20python+fastapi+%2F+flask;_%20linux+%26+networking;_%20database+%E2%80%94+mysql+%2F+postgres" alt="roles" />
+<br/>
 <!-- ████████████████ STATUS ████████████████ -->
-
-![](https://img.shields.io/badge/STATUS-ONLINE-22c55e?style=flat-square&labelColor=171717&color=22c55e&logoColor=white&fontFamily=JetBrains+Mono)
-&nbsp;
-![](https://img.shields.io/badge/LOCATION-INDIA-171717?style=flat-square&labelColor=171717&color=333333)
-&nbsp;
-![](https://img.shields.io/badge/OPEN_TO-COLLABORATION-171717?style=flat-square&labelColor=171717&color=333333)
-&nbsp;
-![Profile Views](https://komarev.com/ghpvc/?username=zeroxv6&style=flat-square&color=333333&labelColor=171717&label=VIEWS)
-
 </div>
-
 <br/>
 
 <!-- ═══════════════════ ABOUT ═══════════════════ -->
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
+---
 
 **`// whoami`**
 
@@ -65,7 +61,7 @@ $ whoami
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
+---
 
 **`// stack & tools`**
 
@@ -98,11 +94,9 @@ $ whoami
 
 <br/>
 
-<!-- ═══════════════════ STREAK ═══════════════════ -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
+---
 
 **`// contribution graph`**
 
@@ -120,8 +114,7 @@ $ whoami
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
-
+--- 
 **`// connect`**
 
 <br/>
