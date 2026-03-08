@@ -7,7 +7,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=56&duration=1&pause=99999&color=171717&background=FAFAF900&center=true&vCenter=true&repeat=false&width=700&height=90&lines=zeroxv6" alt="zeroxv6" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=56&duration=1&pause=99999&color=000000&background=FAFAF900&center=true&vCenter=true&repeat=false&width=700&height=90&lines=zeroxv6" alt="zeroxv6" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=15&duration=1&pause=99999&color=737373&background=FAFAF900&center=true&vCenter=true&repeat=false&width=700&height=28&lines=raman+mann+%2F%2F+android+%26+backend+engineer" alt="subtitle" />
 
@@ -117,32 +117,6 @@ me = {
 <img src="https://img.shields.io/badge/Linux-171717?style=flat-square&logo=linux&logoColor=22c55e" />
 &nbsp;
 <img src="https://img.shields.io/badge/Gradle-171717?style=flat-square&logo=gradle&logoColor=22c55e" />
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════ STATS ═══════════════════ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=11&duration=1&pause=99999&color=737373&center=true&vCenter=true&repeat=false&width=700&height=20&lines=──────────────────────────────────────────────────────────────────" />
-
-**`// github stats`**
-
-<br/>
-
-<a href="https://github.com/zeroxv6">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=zeroxv6&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=FAFAF9&text_color=171717&icon_color=22c55e&title_color=22c55e&ring_color=22c55e" />
-  &nbsp;&nbsp;
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zeroxv6&layout=compact&langs_count=7&hide_border=true&bg_color=FAFAF9&text_color=171717&title_color=22c55e" />
-</a>
-
-<br/><br/>
-
-<a href="https://git.io/streak-stats">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=zeroxv6&hide_border=true&background=FAFAF9&stroke=E5E5E5&ring=22c55e&fire=22c55e&currStreakNum=171717&sideNums=171717&currStreakLabel=737373&sideLabels=737373&dates=A3A3A3&font=JetBrains+Mono" />
-</a>
 
 </div>
 
