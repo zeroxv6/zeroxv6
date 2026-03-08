@@ -1,29 +1,23 @@
-!--
+<!--
   ┌──────────────────────────────────────────────┐
   │  github.com/zeroxv6 — profile readme          │
   │  font: JetBrains Mono // palette: #22c55e     │
   └──────────────────────────────────────────────┘
 -->
 
-<!-- ██████████████████ HERO BANNER ██████████████████ -->
+<!-- ██████████████████ HERO — LIGHT THEME ██████████████████ -->
 
 <div align="center">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
-  <rect width="900" height="160" fill="#171717"/>
-  <!-- subtle grid lines -->
-  <line x1="0" y1="0" x2="900" y2="0" stroke="#22c55e" stroke-width="2"/>
-  <line x1="0" y1="158" x2="900" y2="158" stroke="#333333" stroke-width="1"/>
-  <!-- corner brackets -->
-  <text x="18" y="30" font-family="monospace" font-size="13" fill="#333333">╭──</text>
-  <text x="18" y="148" font-family="monospace" font-size="13" fill="#333333">╰──</text>
-  <text x="840" y="30" font-family="monospace" font-size="13" fill="#333333">──╮</text>
-  <text x="840" y="148" font-family="monospace" font-size="13" fill="#333333">──╯</text>
-  <!-- main title -->
-  <text x="450" y="88" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="72" font-weight="800" fill="#22c55e" text-anchor="middle" letter-spacing="-2">zeroxv6</text>
-  <!-- subtitle -->
-  <text x="450" y="122" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" font-weight="400" fill="#737373" text-anchor="middle" letter-spacing="1">raman mann  //  android &amp; backend engineer</text>
-</svg>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=72&duration=1&pause=99999&color=22c55e&background=0d111700&center=true&vCenter=true&repeat=false&width=900&height=110&lines=zeroxv6" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=72&duration=1&pause=99999&color=22c55e&background=FFFFFF00&center=true&vCenter=true&repeat=false&width=900&height=110&lines=zeroxv6" alt="zeroxv6" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=1&pause=99999&color=848d97&background=0d111700&center=true&vCenter=true&repeat=false&width=900&height=28&lines=raman+mann+%C2%A0+%2F%2F+%C2%A0+android+%26+backend+engineer" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=1&pause=99999&color=737373&background=FFFFFF00&center=true&vCenter=true&repeat=false&width=900&height=28&lines=raman+mann+%C2%A0+%2F%2F+%C2%A0+android+%26+backend+dev" alt="subtitle" />
+</picture>
 
 <br/>
 
@@ -33,7 +27,7 @@
 
 <br/>
 
-<!-- ████████████████ STATUS ████████████████ -->
+<!-- ████████████████ STATUS BADGES ████████████████ -->
 
 ![](https://img.shields.io/badge/STATUS-ONLINE-22c55e?style=flat-square&labelColor=171717&color=22c55e)
 &nbsp;
@@ -112,6 +106,8 @@ $ whoami
 
 <br/>
 
+<!-- ═══════════════════ CONTRIBUTION GRAPH ═══════════════════ -->
+
 <div align="center">
 
 ---
@@ -120,9 +116,10 @@ $ whoami
 
 <br/>
 
-<a href="https://github.com/zeroxv6">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zeroxv6&bg_color=FAFAF9&color=737373&line=22c55e&point=171717&area=true&area_color=22c55e&hide_border=true&custom_title=contribution%20activity&font_color=171717" width="98%"/>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=zeroxv6&bg_color=0d1117&color=848d97&line=22c55e&point=e6edf3&area=true&area_color=22c55e&hide_border=true&custom_title=contribution%20activity&font_color=e6edf3" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zeroxv6&bg_color=FAFAF9&color=737373&line=22c55e&point=171717&area=true&area_color=22c55e&hide_border=true&custom_title=contribution%20activity&font_color=171717" width="98%" />
+</picture>
 
 </div>
 
@@ -132,7 +129,8 @@ $ whoami
 
 <div align="center">
 
---- 
+---
+
 **`// connect`**
 
 <br/>
@@ -150,3 +148,5 @@ $ whoami
 </a>
 
 <br/><br/>
+
+</div>
